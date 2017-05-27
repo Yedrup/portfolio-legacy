@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+/******************* General**********************/
+* {
+  box-sizing: border-box;
+} 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  background-color: rgb(54, 54, 53);
+  font-family: arial, serif;
+  color: rgb(236, 209, 171);
+}
+.container {
+   flex: 1;
+     -webkit-box-flex: 1;
+      -ms-flex: 1;
+} 
+/************* positions **************/
+body,
+header,
+.dlcv,
+.wrapper,
+.wrapper section {
+  position: relative;
+}
+/****** display / Flex direction *******/
+header,
+nav ul,
+nav li, 
+.gallery li img {
+  display: inline-block;
+}
+.photopurdey,
+.dlcv,
+.contact-info a {
+  display: block;
+}
+body, 
+.gallery {
+display: flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+}
+body,
+.gallery {
+  flex-direction: column;
+    -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+}
+/************* Links **************/
+a {
+  color: rgb(81, 159, 148);
+  font-weight: 800;
+}
+header a,
+.secondary a {
+  text-decoration: none;
+}
+/************* Fonts **********/
+header,
+footer,
+.dlcv,
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+}
+/************* font-size **********/
+.wrappercontact section h3,
+.presentationwrapper h3,
+footer p {
+  font-size: 1.3rem;
+}
+/************* Uppercase **********/
+.presentationwrapper h3,
+.profilonwebsite ul ul,
+.primary h3,
+.secondary h3 {
+  text-transform: uppercase;
+}
+/************ Capitalize **********/
+h1,
+h2,
+nav li a, 
+footer p {
+  text-transform: capitalize;
+}
+/******* Text align center *********/
+header,
+footer,
+.presentationwrapper h3,
+.wrapper,
+.wrapper section {
+  text-align: center;
+}
+/******** List-style none **********/
+header,
+.gallery,
+.gallery1,
+.gallery2,
+.contact-info li {
+  list-style: none;
+}
+/*********** padding 0 / margin 0 **************/
+body,
+nav ul,
+footer p,
+footer img,
+.gallery,
+.gallery1,
+.gallery2 ,
+figure,
+.wrappercontact,
+.contact-info,
+.wrappercontact section {
+  padding: 0;
+}
+.gallery1,
+.gallery2 {
+  margin: 0
+}
+/*********** width 100% **************/
+header,
+body,
+.wrapper,
+.gallery li img {
+  width: 100%;
+}
+
+/********************* Heading ******************/
+.background-img,
+.background-img:before {
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.background-img {
+  background: url("../img/workplace.jpg") no-repeat center;
+  opacity: 0.9;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  background-size: cover;
+  z-index: -1;
+}
+.background-img:before {
+  content: "";
+  background-color: rgba(31, 29, 27,0.3);
+}
+.logoheader h1,
+.logoheader h2 {
+  font-size: 1.5rem;
+  color: #FFF;
+  text-shadow: 1px 1px 2px #0F0F0F;
+}
+/******************* Nav **********************/
+nav {
+  padding: 2px 0;
+  font-size: 1.1rem;
+}
+nav ul {
+  background-color: rgba(50, 51, 50, 0.8);
+  border-radius: 10px;
+}
+nav li {
+  margin: .2rem 0;
+}
+nav li a {
+  padding: .2rem 1rem;
+  color: #FFF;
+  font-weight: 700;
+}
+.selected, nav li a:hover {
+  color: rgb(91, 138, 131);
+}
+nav li:nth-child(2){
+  border-right: 2px solid rgba(91, 138, 131, 0.6);
+  border-left: 2px solid rgba(91, 138, 131, 0.6);
+}
+/***************** Footer **********************/
+.wrapper, 
+.presentationwrapper,
+.wrappercontact {
+  overflow: hidden;
+}
+footer {
+  background: rgb(39, 72, 100);
+}
+footer img {
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  margin: 10px 5px 0 5px;
+  height: 2rem;
+  width: 2rem;
+}
+  footer img:hover {
+    border: 2px solid rgb(81, 159, 148);
+}
+footer p {
+  margin: 0;
+  color: #FFF;
+  font-weight: 800;
+}
+/***************** Page: Home/About *************/
+.photopurdey {
+  margin : 2rem auto;
+  border-radius: 50%;
+  border: 3px solid rgb(81, 159, 148);
+}
+.presentationwrapper {
+    margin: 6% 5%;
+}
+.presentationwrapper section {
+  background-color: rgb(236, 209, 171);
+  padding: 3%;
+  margin: 0 0 5% 0;
+  border-radius: 50px 15px 80px 20px;
+  color: rgb(33, 65, 92);
+}
+.presentationwrapper h3 {
+  margin: 2% 0;
+  color: rgb(54, 87, 115);
+}
+.profilonwebsite ul,
+.education ul,
+.job ul {
+  padding: 0 1rem;
+  line-height: 1.5rem;
+}
+.profilonwebsite ul ul {
+  list-style: circle;
+  padding: 0 1rem;
+  font-size: .8rem;
+}
+.profilonwebsite li {
+  line-height: 1.4rem;
+}
+.dlcv {
+  background-color: rgb(81, 159, 148);
+  border: 2px solid rgb(54, 87, 115);
+  color: #FFF;
+  border-radius: 20% 30%;
+  font-size: 1.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+  .dlcv:hover {
+    color: rgb(66, 184, 161);
+    background-color:rgb(35, 83, 96);
+}
+.dlcv span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+/******************* Page: Portfolio *************/
+.wrapper {
+  width: 100%;
+  margin: auto;
+}
+.wrapper span {
+  color: rgb(65, 182, 166);
+}
+.wrapper p {
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+.gallery {
+  justify-content: space-around;
+} 
+.gallery ul {
+    justify-content: space-between;
+}
+.gallery1 li,
+.gallery2 li {
+  margin: 1rem;
+}
+  .gallery1 li:last-of-type {
+    margin-bottom: .5rem;
+}
+  .gallery2 li:first-of-type {
+    margin-top: .5rem;
+}
+figure {
+  overflow: hidden;
+  width: 80%;
+  border-radius: 15px;
+  margin: auto;
+  -webkit-transform: translateZ(0);
+}
+  .gallery1 figure:last-of-type {
+    margin-bottom: 0rem;
+}
+  .gallery2 figure:first-of-type {
+    margin-top: 0rem;
+}
+.gallery li img {
+  vertical-align: middle;
+
+}
+ /** Galerie hover effect **/
+.img-hover1 figure img {
+  transform: scale(1);
+    -webkit-transform: scale(1);
+  transition: .5s linear;
+    -webkit-transition: .5s linear;
+}
+  .img-hover1 figure:hover img {
+    transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+}
+.img-hover2 figure img {
+  transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+  transition: .5s linear;
+    -webkit-transition: .5s linear;
+}  
+  .img-hover2 figure:hover img {
+    transform: scale(1);
+      -webkit-transform: scale(1);
+}
+.img-hover3 figure {
+  background-color: rgb(54, 87, 115);
+}
+.img-hover3 figure img {
+  transform: scale(1.5);
+    -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+   -webkit-transition: .3s ease-in-out;
+}
+  .img-hover3 figure:hover img {
+    transform: scale(1);
+    opacity: .3;
+}
+.img-hover4 figure img {
+  transform: rotate(13deg) scale(1.3);
+    -webkit-transform: rotate(13deg) scale(1.3);
+  transition: .5s ease-out; 
+    -webkit-transition: .5s ease-out;
+}
+  .img-hover4 figure:hover img {
+    transform: rotate(0deg) scale(1);
+      -webkit-transform: rotate(0deg) scale(1);
+}
+.img-hover5 figure img {
+  margin-left: 40px;
+  transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  transition: .5s linear;
+    -webkit-transition: .5s linear;
+}
+  .img-hover5 figure:hover img {
+    margin-left: 0px;
+    transform: scale(1);
+      -webkit-transform: scale(1);
+}
+.img-hover6 figure img {
+  transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+  transition: .3s ease-in;
+  filter: blur(15px);
+    -webkit-filter: blur(15px);
+}
+  .img-hover6 figure:hover img {
+    transform: scale(1);
+      -webkit-transform: scale(1);
+    filter: blur(0);
+      -webkit-filter: blur(0);
+}
+/******************* Page: Contact **************/
+.wrappercontact {
+  margin: 2rem;
+}
+.wrappercontact section h3 {
+  color: rgb(211, 171, 130);
+}
+.primary {
+  margin-bottom: 2.5rem;
+}
+.contact-info li {
+  margin-top: 1rem;
+}
+.contact-info a {
+  min-height: 1.667rem;
+  background-repeat: no-repeat; 
+  background-size: 1.667rem 1.667rem;
+  padding: 0 0 0 2.5rem;
+}
+.contact-info li.phone a {
+  background-image: url("../img/phone-icon.svg");
+ }
+.contact-info li.mail a {
+  background-image: url("../img/mail-icon.svg");
+ }
+.contact-info li.twitter a {
+  background-image: url("../img/twitter-icon.svg");
+ }
