@@ -34,7 +34,7 @@ nav li,
 .gallery li img {
   display: inline-block;
 }
-.photopurdey,
+.photoPresentation,
 .dlcv,
 .contact-info a {
   display: block;
@@ -77,7 +77,7 @@ footer p {
 }
 /************* Uppercase **********/
 .presentationwrapper h3,
-.profilonwebsite ul ul,
+.skillsWrapper ul ul,
 .primary h3,
 .secondary h3 {
   text-transform: uppercase;
@@ -210,13 +210,13 @@ footer p {
   font-weight: 800;
 }
 /***************** Page: Home/About *************/
-.photopurdey {
+.photoPresentation {
   margin : 2rem auto;
   border-radius: 50%;
   border: 3px solid rgb(81, 159, 148);
 }
 .presentationwrapper {
-    margin: 6% 5%;
+  margin: 6% 5%;
 }
 .presentationwrapper section {
   background-color: rgb(236, 209, 171);
@@ -229,19 +229,24 @@ footer p {
   margin: 2% 0;
   color: rgb(54, 87, 115);
 }
-.profilonwebsite ul,
+.skillsWrapper ul,
 .education ul,
 .job ul {
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
   line-height: 1.5rem;
 }
-.profilonwebsite ul ul {
-  list-style: circle;
-  padding: 0 1rem;
-  font-size: .8rem;
-}
-.profilonwebsite li {
+.skillsWrapper li {
   line-height: 1.4rem;
+}
+.skills ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillsList li {
+  background-color: rgb(81, 159, 148);
+  padding: .5rem;
+  margin: .5rem;
 }
 .dlcv {
   background-color: rgb(81, 159, 148);
