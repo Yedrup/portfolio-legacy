@@ -31,8 +31,8 @@ header,
 body, 
 .gallery,
 header,
-nav ul,
-nav li, 
+.menu ul,
+.menu  li, 
 .gallery li img,
 .photoPresentation,
 .dlcv,
@@ -56,32 +56,31 @@ a {
   font-weight: 800;
 }
 header a,
-.secondary a {
+.secondaryColumn a {
   text-decoration: none;
 }
 /************* Fonts **********/
 header,
 footer,
 .dlcv,
-h3 {
+.titleSection {
   font-family: 'Ubuntu', sans-serif;
 }
 /************* font-size **********/
-.wrappercontact section h3,
-.presentationwrapper h3 {
+.titleSection {
   font-size: 1.3rem;
 }
 
 /************* Uppercase **********/
 .titleSection,
-.skillsWrapper ul {
+.skillsWrapper ul{
   text-transform: uppercase;
 }
 /************ Capitalize **********/
-h1,
-h2,
-nav li a, 
-footer p {
+.myName,
+.jobTitle,
+.menu, 
+.copyright {
   text-transform: capitalize;
 }
 /******* Text align center *********/
@@ -97,21 +96,23 @@ header,
 .gallery,
 .gallery1,
 .gallery2,
-.contact-info li {
+.contact-info li,
+.profilOnLearningPlatform li {
   list-style: none;
 }
 /*********** padding 0 / margin 0 **************/
 body,
-nav ul,
-footer p,
-footer img,
+.menu  ul,
+.copyright,
+.logo,
 .gallery,
 .gallery1,
 .gallery2 ,
 figure,
 .wrappercontact,
 .contact-info,
-.wrappercontact section {
+.primaryColumn,
+.secondaryColumn {
   padding: 0;
 }
 .gallery1,
@@ -146,41 +147,41 @@ body,
   content: "";
   background-color: rgba(31, 29, 27,0.3);
 }
-.logoheader h1,
-.logoheader h2 {
+.myName,
+.jobTitle {
   font-size: 1.5rem;
   color: #FFF;
   text-shadow: 1px 1px 2px #0F0F0F;
 }
 /******************* Nav **********************/
-nav {
+.menu {
   display: flex;
   justify-content: center;  
   padding: 2px 0;
   font-size: 1.1rem;
 }
-nav ul {
+.menu ul {
   background-color: rgba(50, 51, 50, 0.8);
   border-radius: 10px;
 }
-nav li {
+.menu li {
   margin: .2rem 0;
 }
-nav li a {
+.menu li a {
   padding: .2rem 1rem;
   color: #FFF;
   font-weight: 700;
 }
-.selected, nav li a:hover {
+.selected, .menu li a:hover {
   color: rgb(91, 138, 131);
 }
-nav li:nth-child(2){
+.menu li:nth-child(2){
   border-right: 2px solid rgba(91, 138, 131, 0.6);
   border-left: 2px solid rgba(91, 138, 131, 0.6);
 }
 /***************** Footer **********************/
 .wrapper, 
-.presentationwrapper,
+.presentationWrapper,
 .wrappercontact {
   overflow: hidden;
 }
@@ -189,38 +190,38 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 5rem;
+  min-height: 2rem;
 }
-footer img {
+.logo {
+  margin: 1rem 1rem 0 0;
   border-radius: 50%;
   border: 2px solid #FFF;
-  margin: 10px 5px 0 5px;
   height: 3rem;
   width: 3rem;
 }
-  footer img:hover {
+  .logo:hover {
     border: 2px solid rgb(81, 159, 148);
 }
-footer p {
+.copyright {
   margin: 1rem 0;
   color: #FFF;
   font-weight: 800;
 }
 /***************** Page: Home/About *************/
 .photoPresentation {
-  margin : 1rem auto;
+  margin : 2rem auto 1rem;
   border-radius: 50%;
   border: 1.5px solid rgb(81, 159, 148);
 }
-.presentationwrapper {
+.presentationWrapper {
   width: 95%;
   margin: 2rem auto;
+  padding: .5rem;
   background-color: rgb(236, 209,171);
   border-radius: 3px;
 }
-.presentationwrapper section {
-  padding: 3%;
-  margin: 0 0 5% 0;
+.presentationWrapper section {
+  margin: 0 0 2rem 0;
   border-radius: 50px 15px 80px 20px;
   color: rgb(33, 65, 92);
 }
@@ -232,11 +233,6 @@ footer p {
   display: flex;
   flex-direction: column;
 }
-.skills,
-.profilOnLearningPlatform {
-   
-}
-
 .skillsWrapper ul,
 .education ul,
 .job ul {
@@ -246,7 +242,6 @@ footer p {
 .skillsWrapper li {
   line-height: 1.4rem;
 }
-
 .skills ul {
   list-style: none;
   display: flex;
@@ -403,13 +398,13 @@ figure {
       -webkit-filter: blur(0);
 }
 /******************* Page: Contact **************/
-.wrappercontact {
+.wrapperContact {
   margin: 2rem;
 }
-.wrappercontact .titleSection {
+.wrapperContact .titleSection {
   color: rgb(211, 171, 130);
 }
-.primary {
+.primaryColumn {
   margin-bottom: 2.5rem;
 }
 .contact-info li {

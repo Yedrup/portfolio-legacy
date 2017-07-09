@@ -8,7 +8,7 @@
   } 
   /**** display *****/
   .gallery, 
-  .wrappercontact {
+  .wrapperContact {
    flex-direction: row;
       -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -34,30 +34,37 @@
    margin-left: 2rem;
    list-style: none;
   }  
-  .logoheader h1,
-  .logoheader h2 {
+  .myName,
+  .jobTitle {
     font-size: 2rem;
     color: #FFF;
     font-weight: 800; 
   }
    /******************* nav **********************/
-  nav li a {
+  .menu li a {
     font-size: 1.4rem;
   }
   /**************** Footer *************/
-  footer img {
-    margin: 1rem 1rem 0 0;
+  .logo {
     height: 3rem;
     width: 3rem;
   }
-    footer img:hover {
+    .logo:hover {
         border: 3px solid rgb(54, 87, 115);
   }
   footer {
     background-color: rgb(211, 177, 130);
   }
   /************ Page: Home + Contact *************/ 
-  .presentationwrapper {
+  @supports (shape-outside: circle(40%)) {
+    .photoPresentation {
+      float: left;
+      -webkit-shape-outside: circle(40%);
+      shape-outside: circle(40%);
+      margin : 7rem 2rem 4rem 2rem;
+    }   
+  }
+  .presentationWrapper {
     width: 85%;
     background-color: rgb(54, 87, 115);
   }
@@ -66,13 +73,11 @@
     color: rgb(211, 177, 130);
     text-align: left;
   }
-  .presentationwrapper section {
-    margin: 0 0 1rem 0;
+  .presentationWrapper section {
+    margin: 0 0 1.8rem 0;
     border-radius: 50%;
-    color: #FFF;
-  }
-  .presentationwrapper section{ 
     background-color: rgb(54, 87, 115);
+    color: #FFF;
   }
   .skillsWrapper {
     flex-direction: row;
@@ -82,24 +87,19 @@
   }
 
   .profil,
-  .primary h3,
-  .secondary h3{
+  .titleSection,
+  .titleSection{
     color: rgb(211, 171, 130);
     text-align: left;
     font-size: 1.4rem;
   }
-  .profilonwebsite ul ul {
+  .profilonwebsite ul {
     font-size: 1.2rem;
   }
-  .presentationwrapper li {
+  .presentationWrapper li {
     margin-top: .5rem;
   }
-  .presentation,
-  .profilonwebsite,
-  .education,
-  .job {
-    border: none;
-  }
+
   .job li,
   .education li {
     list-style-type: circle;
@@ -118,11 +118,11 @@
   .gallery1 ,
   .gallery2 {
     width: 100%;
-   }
-   .gallery1 li,
-   .gallery2 li {
-    margin: 2rem 0;
-   }
+  }
+ .gallery1 li,
+ .gallery2 li {
+  margin: 2rem 0;
+ }
   .gallery1 li:last-of-type {
     margin-bottom: 2rem;
   }
@@ -130,13 +130,13 @@
     margin-top: 2rem;
   }
   /************Page: Contact *************/
-  .wrappercontact {
+  .wrapperContact {
     display: flex;
       display: -webkit-box;
         display: -ms-flexbox;
   }
-  .primary{
-    margin-right: 5%;
+  .primaryColumn {
+    margin-right: 3rem;
     margin-bottom: 0;
     width: 50%;
   }
@@ -147,12 +147,12 @@
   /******************* General **********************/
   body,
   html {
-    font-size: 22px;
+    font-size: 20px;
   }
   .titleSection {
     font-size: 1rem;
   }
-  .primary{
+  .primaryColumn {
     width: 60%;
   }
 }
