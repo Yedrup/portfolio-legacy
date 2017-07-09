@@ -189,13 +189,17 @@ nav li:nth-child(2){
 }
 footer {
   background: rgb(39, 72, 100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 5rem;
 }
 footer img {
   border-radius: 50%;
   border: 2px solid #FFF;
   margin: 10px 5px 0 5px;
-  height: 2rem;
-  width: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
   footer img:hover {
     border: 2px solid rgb(81, 159, 148);

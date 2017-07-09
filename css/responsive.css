@@ -3,7 +3,7 @@
 @media screen and (min-width: 768px)  {
 /******************* General **********************/  
 body{
-  font-size: 18px;
+  font-size: 16px;
 } 
 /**** display *****/
 .gallery, 
@@ -153,7 +153,7 @@ footer {
 @media screen and (min-width: 1024px) {
 /******************* General **********************/
 body{
-  font-size: 25px;
+  font-size: 22px;
 }
 .presentationwrapper h3 {
   font-size: 1.7rem;
