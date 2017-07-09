@@ -1,169 +1,158 @@
 
 /************************ Min Width 768px ********************************************/
 @media screen and (min-width: 768px)  {
-/******************* General **********************/  
-body{
-  font-size: 16px;
-} 
-/**** display *****/
-.gallery, 
-.wrappercontact {
- flex-direction: row;
-    -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-  justify-content: space-around;
-     -ms-flex-pack: distribute;
+  /******************* General **********************/  
+  body,
+  html {
+    font-size: 16px;
+  } 
+  /**** display *****/
+  .gallery, 
+  .wrappercontact {
+   flex-direction: row;
+      -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+    justify-content: space-around;
+       -ms-flex-pack: distribute;
+  }
+  /**** position *****/
+  .background-img {
+    position: absolute;  
+  }
+  /******************* Header **********************/ 
+  .background-img {
+    background: url("../img/mac.jpg") no-repeat center;
+    background-size: cover;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .logoheader {
+   float: left;
+   margin-left: 2rem;
+   list-style: none;
+  }  
+  .logoheader h1,
+  .logoheader h2 {
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 800; 
+  }
+   /******************* nav **********************/
+  nav li a {
+    font-size: 1.4rem;
+  }
+  /**************** Footer *************/
+  footer img {
+    margin: 1rem 1rem 0 0;
+    height: 3rem;
+    width: 3rem;
+  }
+    footer img:hover {
+        border: 3px solid rgb(54, 87, 115);
+  }
+  footer {
+    background-color: rgb(211, 177, 130);
+  }
+  /************ Page: Home + Contact *************/ 
+  .presentationwrapper {
+    width: 85%;
+    background-color: rgb(54, 87, 115);
+  }
+  .titleSection {
+    margin:0;
+    color: rgb(211, 177, 130);
+    text-align: left;
+  }
+  .presentationwrapper section {
+    margin: 0 0 1rem 0;
+    border-radius: 50%;
+    color: #FFF;
+  }
+  .presentationwrapper section{ 
+    background-color: rgb(54, 87, 115);
+  }
+  .skillsWrapper {
+    flex-direction: row;
+  }
+  .skills {
+    width: 70%;
+  }
+
+  .profil,
+  .primary h3,
+  .secondary h3{
+    color: rgb(211, 171, 130);
+    text-align: left;
+    font-size: 1.4rem;
+  }
+  .profilonwebsite ul ul {
+    font-size: 1.2rem;
+  }
+  .presentationwrapper li {
+    margin-top: .5rem;
+  }
+  .presentation,
+  .profilonwebsite,
+  .education,
+  .job {
+    border: none;
+  }
+  .job li,
+  .education li {
+    list-style-type: circle;
+    margin-left: .5rem;
+  }
+  .dlcv {
+    width: 5rem;
+    height: 5rem;
+  }
+   /*********** Page : Portfolio  **********************/  
+  .wrapper,
+  .wrapper section {
+    width: 90%;
+    margin: auto;
+  }
+  .gallery1 ,
+  .gallery2 {
+    width: 100%;
+   }
+   .gallery1 li,
+   .gallery2 li {
+    margin: 2rem 0;
+   }
+  .gallery1 li:last-of-type {
+    margin-bottom: 2rem;
+  }
+  .gallery2 li:first-of-type {
+    margin-top: 2rem;
+  }
+  /************Page: Contact *************/
+  .wrappercontact {
+    display: flex;
+      display: -webkit-box;
+        display: -ms-flexbox;
+  }
+  .primary{
+    margin-right: 5%;
+    margin-bottom: 0;
+    width: 50%;
+  }
 }
-/**** position *****/
-.background-img,
-nav {
-  position: absolute;  
-}
-/******************* Header **********************/ 
-.background-img {
-  background: url("../img/mac.jpg") no-repeat center;
-  background-size: cover;
-  top:0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-.logoheader {
- float: left;
- margin-left: 2rem;
- list-style: none;
-}  
-.logoheader h1,
-.logoheader h2 {
-  font-size: 2rem;
-  color: #FFF;
-  text-align: left;
-  font-weight: 800; 
-}
- /******************* nav **********************/
-nav {
-  bottom: 0;
-  right: 5%;
-  text-align: right;
-} 
-nav li a {
-  font-size: 1.4rem;
-}
-/**************** Footer *************/
-footer img {
-  margin: 1rem 1rem 0 0;
-  height: 3rem;
-  width: 3rem;
-}
-  footer img:hover {
-      border: 3px solid rgb(54, 87, 115);
-}
-footer {
-  background-color: rgb(211, 177, 130);
-}
-/************ Page: Home + Contact *************/ 
-.presentationwrapper h3 {
-  margin:0;
-}
-.presentationwrapper section {
-  margin: 0 0 1rem 0;
-  border-radius: 50%;
-  color: #FFF;
-}
-.presentationwrapper section, 
-.columnCount1,
-.columnCount2 {
-  background-color: rgb(54, 87, 115);
-}
-.presentationwrapper h3,
-.primary h3,
-.secondary h3{
-  color: rgb(211, 171, 130);
-  text-align: left;
-  font-size: 1.4rem;
-}
-.profilonwebsite ul ul {
-  font-size: 1.2rem;
-}
-.columnCount1, .columnCount2 {
-  padding: 2rem;
-  column-count: 2;
-    -moz-column-count: 2;
-      -webkit-column-count: 2;
-  column-gap: 4rem;
-    -moz-column-gap: 4rem;
-      -webkit-column-gap: 4rem;
-  border-radius: 25px;
-}   
-.columnCount2 {
-  margin-top:4rem;
-}
-.columnCount1,
-.columnCount2,
-.columnCount2 li {
-  line-height: 1.8rem;
-}
-.presentationwrapper li {
-  margin-top: .5rem;
-}
-.presentation,
-.profilonwebsite,
-.education,
-.job {
-  border: none;
-}
-.dlcv {
-  width: 5rem;
-  height: 5rem;
-}
- /*********** Page : Portfolio  **********************/  
-.wrapper,
-.wrapper section {
-  width: 90%;
-  margin: auto;
-}
-.gallery1 ,
-.gallery2 {
-  width: 100%;
- }
- .gallery1 li,
- .gallery2 li {
-  margin: 2rem 0;
- }
-.gallery1 li:last-of-type {
-  margin-bottom: 2rem;
-}
-.gallery2 li:first-of-type {
-  margin-top: 2rem;
-}
-/************Page: Contact *************/
-.wrappercontact {
-  display: flex;
-    display: -webkit-box;
-      display: -ms-flexbox;
-}
-.primary{
-  margin-right: 5%;
-  margin-bottom: 0;
-  width: 50%;
-}
-}
+
 /******************************** Min Width 1024px ************************************/
 @media screen and (min-width: 1024px) {
-/******************* General **********************/
-body{
-  font-size: 22px;
-}
-.presentationwrapper h3 {
-  font-size: 1.7rem;
-}
-.primary{
-  width: 60%;
-}
-.columnCount1,
-.columnCount2,
-.columnCount2 li {
-  line-height: 3rem;
-}
+  /******************* General **********************/
+  body,
+  html {
+    font-size: 22px;
+  }
+  .titleSection {
+    font-size: 1rem;
+  }
+  .primary{
+    width: 60%;
+  }
 }

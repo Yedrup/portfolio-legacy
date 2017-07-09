@@ -28,26 +28,23 @@ header,
   position: relative;
 }
 /****** display / Flex direction *******/
+body, 
+.gallery,
 header,
 nav ul,
 nav li, 
-.gallery li img {
-  display: inline-block;
-}
+.gallery li img,
 .photoPresentation,
 .dlcv,
 .contact-info a {
-  display: block;
-}
-body, 
-.gallery {
 display: flex;
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
       display: -ms-flexbox;  /* TWEENER - IE 10 */
         display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 }
 body,
-.gallery {
+.gallery,
+header {
   flex-direction: column;
     -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -71,15 +68,13 @@ h3 {
 }
 /************* font-size **********/
 .wrappercontact section h3,
-.presentationwrapper h3,
-footer p {
+.presentationwrapper h3 {
   font-size: 1.3rem;
 }
+
 /************* Uppercase **********/
-.presentationwrapper h3,
-.skillsWrapper ul ul,
-.primary h3,
-.secondary h3 {
+.titleSection,
+.skillsWrapper ul {
   text-transform: uppercase;
 }
 /************ Capitalize **********/
@@ -92,7 +87,7 @@ footer p {
 /******* Text align center *********/
 header,
 footer,
-.presentationwrapper h3,
+.titleSection,
 .wrapper,
 .wrapper section {
   text-align: center;
@@ -159,6 +154,8 @@ body,
 }
 /******************* Nav **********************/
 nav {
+  display: flex;
+  justify-content: center;  
   padding: 2px 0;
   font-size: 1.1rem;
 }
@@ -205,30 +202,41 @@ footer img {
     border: 2px solid rgb(81, 159, 148);
 }
 footer p {
-  margin: 0;
+  margin: 1rem 0;
   color: #FFF;
   font-weight: 800;
 }
 /***************** Page: Home/About *************/
 .photoPresentation {
-  margin : 2rem auto;
+  margin : 1rem auto;
   border-radius: 50%;
-  border: 3px solid rgb(81, 159, 148);
+  border: 1.5px solid rgb(81, 159, 148);
 }
 .presentationwrapper {
-  margin: 6% 5%;
+  width: 95%;
+  margin: 2rem auto;
+  background-color: rgb(236, 209,171);
+  border-radius: 3px;
 }
 .presentationwrapper section {
-  background-color: rgb(236, 209, 171);
   padding: 3%;
   margin: 0 0 5% 0;
   border-radius: 50px 15px 80px 20px;
   color: rgb(33, 65, 92);
 }
-.presentationwrapper h3 {
+.titleSection {
   margin: 2% 0;
   color: rgb(54, 87, 115);
 }
+.skillsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.skills,
+.profilOnLearningPlatform {
+   
+}
+
 .skillsWrapper ul,
 .education ul,
 .job ul {
@@ -238,6 +246,7 @@ footer p {
 .skillsWrapper li {
   line-height: 1.4rem;
 }
+
 .skills ul {
   list-style: none;
   display: flex;
@@ -247,17 +256,26 @@ footer p {
   background-color: rgb(81, 159, 148);
   padding: .5rem;
   margin: .5rem;
+  border-radius: 2.5px;
+}
+.job li {
+  list-style: none;
+}
+.education li {
+  list-style-type: circle;
+  padding: 0;
+  margin-left: 1rem;
 }
 .dlcv {
   background-color: rgb(81, 159, 148);
-  border: 2px solid rgb(54, 87, 115);
+  border: 1px solid rgb(54, 87, 115);
   color: #FFF;
   border-radius: 20% 30%;
   font-size: 1.5rem;
   width: 3.5rem;
   height: 3.5rem;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
   .dlcv:hover {
     color: rgb(66, 184, 161);
@@ -388,7 +406,7 @@ figure {
 .wrappercontact {
   margin: 2rem;
 }
-.wrappercontact section h3 {
+.wrappercontact .titleSection {
   color: rgb(211, 171, 130);
 }
 .primary {
