@@ -61,7 +61,7 @@
       float: left;
       -webkit-shape-outside: circle(40%);
       shape-outside: circle(40%);
-      margin : 7rem 2rem 4rem 2rem;
+      margin : 5rem 2rem 4rem 2rem;
     }   
   }
   .presentationWrapper {
@@ -99,11 +99,10 @@
   .presentationWrapper li {
     margin-top: .5rem;
   }
-
   .job li,
   .education li {
     list-style-type: circle;
-    margin-left: .5rem;
+    margin-left: 2rem;
   }
   .dlcv {
     width: 5rem;

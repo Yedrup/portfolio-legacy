@@ -6,6 +6,7 @@
 } 
 html {
   height: 100%;
+  font-style: 15px;
 }
 body {
   min-height: 100vh;
