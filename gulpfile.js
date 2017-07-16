@@ -2,12 +2,15 @@ var gulp = require('gulp');
 var postcss = require('gulp-postcss');
 
 // Plugins
-var cssnext = require('postcss-cssnext');
 var atImport = require('postcss-import');
+var cssnext = require('postcss-cssnext');
+var svgFragments = require('postcss-svg-fragments');
+
 gulp.task('css', function() {
   var processors = [
   	atImport,
-  	cssnext
+  	cssnext({browsers: 'last 3 versions'}),
+  	svgFragments
   ];
 
   return gulp.src('css/src/*.css')

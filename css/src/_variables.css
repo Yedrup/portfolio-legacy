@@ -1,0 +1,8 @@
+/*CSS Variable*/ 
+:root {
+  --color-prim: rgb(54, 54, 53); 
+  --color-sec: rgb(81, 159, 148);
+  --color-sec-bis: rgb(54, 87, 115);
+  --color-terc: rgb(236, 209, 171);
+  --color-default-text: #FFF;
+}

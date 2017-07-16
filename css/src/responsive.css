@@ -1,11 +1,4 @@
-/*CSS Variable*/ 
-:root {
-  --color-prim: rgb(54, 54, 53); 
-  --color-sec: rgb(81, 159, 148);
-  --color-sec-bis: rgb(54, 87, 115); /*54*/
-  --color-terc: rgb(211, 177, 130);
-  --color-default-text: #FFF;
-}
+@import '_variables.css';
 /************************ Min Width 768px ********************************************/
 @media screen and (min-width: 768px)  {
   /******************* General **********************/  
@@ -16,11 +9,8 @@
   /**** display *****/
   .gallery, 
   .wrapperContact {
-   flex-direction: row;
-      -webkit-box-direction: normal;
-        -ms-flex-direction: row;
+    flex-direction: row;
     justify-content: space-around;
-       -ms-flex-pack: distribute;
   }
   /**** position *****/
   .background-img {
@@ -63,14 +53,11 @@
     background-color: var(--color-terc);
   }
   /************ Page: Home + Contact *************/ 
-  @supports (shape-outside: circle(40%)) {
-    .photoPresentation {
+  .photoPresentation {
       float: left;
-      -webkit-shape-outside: circle(40%);
       shape-outside: circle(40%);
       margin : 5rem 2rem 4rem 2rem;
-    }   
-  }
+  }   
   .presentationWrapper {
     width: 85%;
     background-color: var(--color-sec-bis);
@@ -154,6 +141,9 @@
   body,
   html {
     font-size: 20px;
+  }
+  .presentationWrapper {
+    background-color: var(--color-sec-bis);
   }
   .titleSection {
     font-size: 1rem;

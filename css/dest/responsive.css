@@ -1,6 +1,4 @@
 /*CSS Variable*/ 
-:root { /*54*/
-} 
 /************************ Min Width 768px ********************************************/ 
 @media screen and (min-width: 768px)  {
   /******************* General **********************/  
@@ -11,11 +9,12 @@
   /**** display *****/
   .gallery, 
   .wrapperContact {
-   flex-direction: row;
-      -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
         -ms-flex-direction: row;
-    justify-content: space-around;
-       -ms-flex-pack: distribute;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
   /**** position *****/
   .background-img {
@@ -55,24 +54,22 @@
         border: 3px solid rgb(54, 87, 115);
   }
   footer {
-    background-color: rgb(211, 177, 130);
+    background-color: rgb(236, 209, 171);
   }
   /************ Page: Home + Contact *************/ 
-  @supports ((-webkit-shape-outside: circle(40%)) or (shape-outside: circle(40%))) {
-    .photoPresentation {
+  .photoPresentation {
       float: left;
       -webkit-shape-outside: circle(40%);
-      shape-outside: circle(40%);
+              shape-outside: circle(40%);
       margin : 5rem 2rem 4rem 2rem;
-    }   
-  }
+  }   
   .presentationWrapper {
     width: 85%;
     background-color: rgb(54, 87, 115);
   }
   .titleSection {
     margin:0;
-    color: rgb(211, 177, 130);
+    color: rgb(236, 209, 171);
     text-align: left;
   }
   .presentationWrapper section {
@@ -94,7 +91,7 @@
   .profil,
   .titleSection,
   .titleSection{
-    color: rgb(211, 177, 130);
+    color: rgb(236, 209, 171);
     text-align: left;
     font-size: 1.4rem;
   }
@@ -151,6 +148,9 @@
   body,
   html {
     font-size: 20px;
+  }
+  .presentationWrapper {
+    background-color: rgb(54, 87, 115);
   }
   .titleSection {
     font-size: 1rem;
