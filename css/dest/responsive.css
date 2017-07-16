@@ -21,7 +21,7 @@
   }
   /******************* Header **********************/ 
   .background-img {
-    background: url("../img/mac.jpg") no-repeat center;
+    background: url("../../img/mac.jpg") no-repeat center;
     background-size: cover;
     top:0;
     left: 0;
