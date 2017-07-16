@@ -1,4 +1,11 @@
-
+/*CSS Variable*/ 
+:root {
+  --color-prim: rgb(54, 54, 53); 
+  --color-sec: rgb(81, 159, 148);
+  --color-sec-bis: rgb(54, 87, 115); /*54*/
+  --color-terc: rgb(211, 177, 130);
+  --color-default-text: #FFF;
+}
 /************************ Min Width 768px ********************************************/
 @media screen and (min-width: 768px)  {
   /******************* General **********************/  
@@ -50,10 +57,10 @@
     width: 3rem;
   }
     .logo:hover {
-        border: 3px solid rgb(54, 87, 115);
+        border: 3px solid var(--color-sec-bis);
   }
   footer {
-    background-color: rgb(211, 177, 130);
+    background-color: var(--color-terc);
   }
   /************ Page: Home + Contact *************/ 
   @supports (shape-outside: circle(40%)) {
@@ -66,17 +73,17 @@
   }
   .presentationWrapper {
     width: 85%;
-    background-color: rgb(54, 87, 115);
+    background-color: var(--color-sec-bis);
   }
   .titleSection {
     margin:0;
-    color: rgb(211, 177, 130);
+    color: var(--color-terc);
     text-align: left;
   }
   .presentationWrapper section {
     margin: 0 0 1.8rem 0;
     border-radius: 50%;
-    background-color: rgb(54, 87, 115);
+    background-color: var(--color-sec-bis);
     color: #FFF;
   }
   .skillsWrapper {
@@ -89,7 +96,7 @@
   .profil,
   .titleSection,
   .titleSection{
-    color: rgb(211, 171, 130);
+    color: var(--color-terc);
     text-align: left;
     font-size: 1.4rem;
   }

@@ -1,26 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 /******************* General**********************/
+
+/*CSS Variable*/
+
 * {
-  box-sizing: border-box;
-} 
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   height: 100%;
   font-style: 15px;
 }
+
 body {
   min-height: 100vh;
   font-size: 16px;
   background-color: rgb(54, 54, 53);
   font-family: arial, serif;
-  color: rgb(236, 209, 171);
+  color: rgb(211, 177, 130);
 }
+
 .container {
    flex: 1;
      -webkit-box-flex: 1;
       -ms-flex: 1;
-} 
+}
+
 /************* positions **************/
+
 body,
 header,
 .dlcv,
@@ -28,7 +37,9 @@ header,
 .wrapper section {
   position: relative;
 }
+
 /****** display / Flex direction *******/
+
 body, 
 .gallery,
 header,
@@ -43,6 +54,7 @@ display: flex;
       display: -ms-flexbox;  /* TWEENER - IE 10 */
         display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 }
+
 body,
 .gallery,
 header {
@@ -51,40 +63,53 @@ header {
       -webkit-box-direction: normal;
         -ms-flex-direction: column;
 }
+
 /************* Links **************/
+
 a {
   color: rgb(81, 159, 148);
   font-weight: 800;
 }
+
 header a,
 .secondaryColumn a {
   text-decoration: none;
 }
+
 /************* Fonts **********/
+
 header,
 footer,
 .dlcv,
 .titleSection {
   font-family: 'Ubuntu', sans-serif;
 }
+
 /************* font-size **********/
+
 .titleSection {
+  font-size: 20.8px;
   font-size: 1.3rem;
 }
 
 /************* Uppercase **********/
+
 .titleSection,
 .skillsWrapper ul{
   text-transform: uppercase;
 }
+
 /************ Capitalize **********/
+
 .myName,
 .jobTitle,
 .menu, 
 .copyright {
   text-transform: capitalize;
 }
+
 /******* Text align center *********/
+
 header,
 footer,
 .titleSection,
@@ -92,7 +117,9 @@ footer,
 .wrapper section {
   text-align: center;
 }
+
 /******** List-style none **********/
+
 header,
 .gallery,
 .gallery1,
@@ -101,7 +128,9 @@ header,
 .profilOnLearningPlatform li {
   list-style: none;
 }
+
 /*********** padding 0 / margin 0 **************/
+
 body,
 .menu  ul,
 .copyright,
@@ -116,11 +145,14 @@ figure,
 .secondaryColumn {
   padding: 0;
 }
+
 .gallery1,
 .gallery2 {
   margin: 0
 }
+
 /*********** width 100% **************/
+
 header,
 body,
 .wrapper,
@@ -129,6 +161,7 @@ body,
 }
 
 /********************* Header ******************/
+
 .background-img,
 .background-img:before {
   position: absolute;
@@ -137,6 +170,7 @@ body,
   right: 0;
   bottom: 0;
 }
+
 .background-img {
   background: url("../../img/workplace.jpg") no-repeat center;
   opacity: 0.9;
@@ -144,139 +178,211 @@ body,
   background-size: cover;
   z-index: -1;
 }
+
 .background-img:before {
   content: "";
-  background-color: rgba(31, 29, 27,0.3);
+  background-color: rgba(31, 29, 27, .3);
 }
+
 .myName,
 .jobTitle {
+  font-size: 24px;
   font-size: 1.5rem;
   color: #FFF;
   text-shadow: 1px 1px 2px #0F0F0F;
 }
+
 /******************* Nav **********************/
+
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;  
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;  
   padding: 2px 0;
+  font-size: 17.6px;
   font-size: 1.1rem;
 }
+
 .menu ul {
-  background-color: rgba(50, 51, 50, 0.8);
+  background-color: rgba(54, 54, 53, 0.7);
   border-radius: 10px;
 }
+
 .menu li {
+  margin: 3.2px 0;
   margin: .2rem 0;
 }
+
 .menu li a {
+  padding: 3.2px 16px;
   padding: .2rem 1rem;
   color: #FFF;
   font-weight: 700;
 }
+
 .selected, .menu li a:hover {
-  color: rgb(91, 138, 131);
+  color: rgb(81, 159, 148);
 }
+
 .menu li:nth-child(2){
-  border-right: 2px solid rgba(91, 138, 131, 0.6);
-  border-left: 2px solid rgba(91, 138, 131, 0.6);
+  border-right: 2px solid rgb(81, 159, 148);
+  border-left: 2px solid rgb(81, 159, 148);
 }
+
 /***************** Footer **********************/
+
 .wrapper, 
 .presentationWrapper,
 .wrappercontact {
   overflow: hidden;
 }
+
 footer {
-  background: rgb(39, 72, 100);
+  background: rgb(54, 87, 115);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 32px;
   min-height: 2rem;
 }
+
 .logo {
+  margin: 16px 16px 0 0;
   margin: 1rem 1rem 0 0;
   border-radius: 50%;
   border: 2px solid #FFF;
+  height: 48px;
   height: 3rem;
+  width: 48px;
   width: 3rem;
 }
-  .logo:hover {
+
+.logo:hover {
     border: 2px solid rgb(81, 159, 148);
 }
+
 .copyright {
+  margin: 16px 0;
   margin: 1rem 0;
   color: #FFF;
   font-weight: 800;
 }
+
 /***************** Page: Home/About *************/
+
 .photoPresentation {
+  margin : 32px auto 16px;
   margin : 2rem auto 1rem;
   border-radius: 50%;
   border: 1.5px solid rgb(81, 159, 148);
 }
+
 .presentationWrapper {
   width: 95%;
+  margin: 32px auto;
   margin: 2rem auto;
+  padding: 8px;
   padding: .5rem;
-  background-color: rgb(236, 209,171);
+  background-color: rgb(211, 177, 130);
   border-radius: 3px;
 }
+
 .presentationWrapper section {
+  margin: 0 0 32px 0;
   margin: 0 0 2rem 0;
   border-radius: 50px 15px 80px 20px;
-  color: rgb(33, 65, 92);
+  color: rgb(54, 87, 115);
 }
+
 .titleSection {
   margin: 2% 0;
   color: rgb(54, 87, 115);
 }
+
 .skillsWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .skillsWrapper ul,
 .education ul,
 .job ul {
+  padding: 0 16px 0 0;
   padding: 0 1rem 0 0;
+  line-height: 24px;
   line-height: 1.5rem;
 }
+
 .skillsWrapper li {
+  line-height: 22.4px;
   line-height: 1.4rem;
 }
+
 .skills ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .skillsList li {
   background-color: rgb(81, 159, 148);
+  padding: 8px;
   padding: .5rem;
+  margin: 8px;
   margin: .5rem;
   border-radius: 2.5px;
 }
+
 .job li {
   list-style: none;
 }
+
 .education li {
   list-style-type: circle;
   padding: 0;
+  margin-left: 16px;
   margin-left: 1rem;
 }
+
 .dlcv {
   background-color: rgb(81, 159, 148);
   border: 1px solid rgb(54, 87, 115);
   color: #FFF;
   border-radius: 20% 30%;
+  font-size: 24px;
   font-size: 1.5rem;
+  width: 56px;
   width: 3.5rem;
+  height: 56px;
   height: 3.5rem;
   margin: auto;
+  margin-bottom: 16px;
   margin-bottom: 1rem;
 }
-  .dlcv:hover {
-    color: rgb(66, 184, 161);
-    background-color:rgb(35, 83, 96);
+
+.dlcv:hover {
+    color: rgb(81, 159, 148);
+    background-color:rgb(54, 87, 115);
 }
+
 .dlcv span {
   position: absolute;
   left: 50%;
@@ -284,34 +390,51 @@ footer {
   transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
+
 /******************* Page: Portfolio *************/
+
 .wrapper {
   width: 100%;
   margin: auto;
 }
+
 .wrapper span {
-  color: rgb(65, 182, 166);
+  color: rgb(81, 159, 148);
 }
+
 .wrapper p {
   font-weight: 500;
+  line-height: 24px;
   line-height: 1.5rem;
 }
+
 .gallery {
-  justify-content: space-around;
-} 
-.gallery ul {
-    justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
+.gallery ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
 .gallery1 li,
 .gallery2 li {
+  margin: 16px;
   margin: 1rem;
 }
-  .gallery1 li:last-of-type {
+
+.gallery1 li:last-of-type {
+    margin-bottom: 8px;
     margin-bottom: .5rem;
 }
-  .gallery2 li:first-of-type {
+
+.gallery2 li:first-of-type {
+    margin-top: 8px;
     margin-top: .5rem;
 }
+
 figure {
   overflow: hidden;
   width: 80%;
@@ -319,60 +442,78 @@ figure {
   margin: auto;
   -webkit-transform: translateZ(0);
 }
-  .gallery1 figure:last-of-type {
+
+.gallery1 figure:last-of-type {
+    margin-bottom: 0px;
     margin-bottom: 0rem;
 }
-  .gallery2 figure:first-of-type {
+
+.gallery2 figure:first-of-type {
+    margin-top: 0px;
     margin-top: 0rem;
 }
+
 .gallery li img {
   vertical-align: middle;
 
 }
- /** Galerie hover effect **/
+
+/** Galerie hover effect **/
+
 .img-hover1 figure img {
   transform: scale(1);
     -webkit-transform: scale(1);
   transition: .5s linear;
     -webkit-transition: .5s linear;
 }
-  .img-hover1 figure:hover img {
+
+.img-hover1 figure:hover img {
     transform: scale(1.2);
       -webkit-transform: scale(1.2);
 }
+
 .img-hover2 figure img {
   transform: scale(1.3);
     -webkit-transform: scale(1.3);
   transition: .5s linear;
     -webkit-transition: .5s linear;
-}  
-  .img-hover2 figure:hover img {
+}
+
+.img-hover2 figure:hover img {
     transform: scale(1);
       -webkit-transform: scale(1);
 }
+
 .img-hover3 figure {
   background-color: rgb(54, 87, 115);
 }
+
 .img-hover3 figure img {
-  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
     -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
    -webkit-transition: .3s ease-in-out;
 }
-  .img-hover3 figure:hover img {
-    transform: scale(1);
+
+.img-hover3 figure:hover img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
     opacity: .3;
 }
+
 .img-hover4 figure img {
   transform: rotate(13deg) scale(1.3);
     -webkit-transform: rotate(13deg) scale(1.3);
   transition: .5s ease-out; 
     -webkit-transition: .5s ease-out;
 }
-  .img-hover4 figure:hover img {
+
+.img-hover4 figure:hover img {
     transform: rotate(0deg) scale(1);
       -webkit-transform: rotate(0deg) scale(1);
 }
+
 .img-hover5 figure img {
   margin-left: 40px;
   transform: scale(1.5);
@@ -380,49 +521,71 @@ figure {
   transition: .5s linear;
     -webkit-transition: .5s linear;
 }
-  .img-hover5 figure:hover img {
+
+.img-hover5 figure:hover img {
     margin-left: 0px;
     transform: scale(1);
       -webkit-transform: scale(1);
 }
+
 .img-hover6 figure img {
   transform: scale(2.5);
     -webkit-transform: scale(2.5);
+  -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="15" /></filter></svg>#filter');
   filter: blur(15px);
     -webkit-filter: blur(15px);
 }
-  .img-hover6 figure:hover img {
+
+.img-hover6 figure:hover img {
     transform: scale(1);
       -webkit-transform: scale(1);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0" /></filter></svg>#filter');
     filter: blur(0);
       -webkit-filter: blur(0);
 }
+
 /******************* Page: Contact **************/
+
 .wrapperContact {
+  margin: 32px;
   margin: 2rem;
 }
+
 .wrapperContact .titleSection {
-  color: rgb(211, 171, 130);
+  color: rgb(211, 177, 130);
 }
+
 .primaryColumn {
+  margin-bottom: 40px;
   margin-bottom: 2.5rem;
 }
+
 .contact-info li {
+  margin-top: 16px;
   margin-top: 1rem;
 }
+
 .contact-info a {
+  min-height: 26.672px;
   min-height: 1.667rem;
   background-repeat: no-repeat; 
   background-size: 1.667rem 1.667rem;
+  padding: 0 0 0 40px;
   padding: 0 0 0 2.5rem;
 }
+
 .contact-info li.phone a {
-  background-image: url("../img/phone-icon.svg");
+  background-image: url("../../img/phone-icon.svg");
  }
+
 .contact-info li.mail a {
-  background-image: url("../img/mail-icon.svg");
+  background-image: url("../../img/mail-icon.svg");
  }
+
 .contact-info li.twitter a {
-  background-image: url("../img/twitter-icon.svg");
+  background-image: url("../../img/twitter-icon.svg");
  }
+
+

@@ -1,5 +1,7 @@
-
-/************************ Min Width 768px ********************************************/
+/*CSS Variable*/ 
+:root { /*54*/
+} 
+/************************ Min Width 768px ********************************************/ 
 @media screen and (min-width: 768px)  {
   /******************* General **********************/  
   body,
@@ -56,7 +58,7 @@
     background-color: rgb(211, 177, 130);
   }
   /************ Page: Home + Contact *************/ 
-  @supports (shape-outside: circle(40%)) {
+  @supports ((-webkit-shape-outside: circle(40%)) or (shape-outside: circle(40%))) {
     .photoPresentation {
       float: left;
       -webkit-shape-outside: circle(40%);
@@ -80,7 +82,10 @@
     color: #FFF;
   }
   .skillsWrapper {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .skills {
     width: 70%;
@@ -89,7 +94,7 @@
   .profil,
   .titleSection,
   .titleSection{
-    color: rgb(211, 171, 130);
+    color: rgb(211, 177, 130);
     text-align: left;
     font-size: 1.4rem;
   }
@@ -139,9 +144,8 @@
     margin-bottom: 0;
     width: 50%;
   }
-}
-
-/******************************** Min Width 1024px ************************************/
+} 
+/******************************** Min Width 1024px ************************************/ 
 @media screen and (min-width: 1024px) {
   /******************* General **********************/
   body,

@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
 /******************* General**********************/
+
+/*CSS Variable*/ 
+:root {
+  --color-prim: rgb(54, 54, 53); 
+  --color-sec: rgb(81, 159, 148);
+  --color-sec-bis: rgb(54, 87, 115);
+  --color-terc: rgb(211, 177, 130);
+  --color-default-text: #FFF;
+}
+
+
+
 * {
   box-sizing: border-box;
 } 
@@ -11,9 +23,9 @@ html {
 body {
   min-height: 100vh;
   font-size: 16px;
-  background-color: rgb(54, 54, 53);
+  background-color: var(--color-prim);
   font-family: arial, serif;
-  color: rgb(236, 209, 171);
+  color: var(--color-terc);
 }
 .container {
    flex: 1;
@@ -53,7 +65,7 @@ header {
 }
 /************* Links **************/
 a {
-  color: rgb(81, 159, 148);
+  color: var(--color-sec);
   font-weight: 800;
 }
 header a,
@@ -151,7 +163,7 @@ body,
 .myName,
 .jobTitle {
   font-size: 1.5rem;
-  color: #FFF;
+  color: var(--color-default-text);
   text-shadow: 1px 1px 2px #0F0F0F;
 }
 /******************* Nav **********************/
@@ -162,7 +174,7 @@ body,
   font-size: 1.1rem;
 }
 .menu ul {
-  background-color: rgba(50, 51, 50, 0.8);
+  background-color: color(var(--color-prim) a(70%));
   border-radius: 10px;
 }
 .menu li {
@@ -170,15 +182,15 @@ body,
 }
 .menu li a {
   padding: .2rem 1rem;
-  color: #FFF;
+  color: var(--color-default-text);
   font-weight: 700;
 }
 .selected, .menu li a:hover {
-  color: rgb(91, 138, 131);
+  color: var(--color-sec);
 }
 .menu li:nth-child(2){
-  border-right: 2px solid rgba(91, 138, 131, 0.6);
-  border-left: 2px solid rgba(91, 138, 131, 0.6);
+  border-right: 2px solid var(--color-sec);
+  border-left: 2px solid var(--color-sec);
 }
 /***************** Footer **********************/
 .wrapper, 
@@ -187,7 +199,7 @@ body,
   overflow: hidden;
 }
 footer {
-  background: rgb(39, 72, 100);
+  background: var(--color-sec-bis);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,39 +208,39 @@ footer {
 .logo {
   margin: 1rem 1rem 0 0;
   border-radius: 50%;
-  border: 2px solid #FFF;
+  border: 2px solid var(--color-default-text);
   height: 3rem;
   width: 3rem;
 }
   .logo:hover {
-    border: 2px solid rgb(81, 159, 148);
+    border: 2px solid var(--color-sec);
 }
 .copyright {
   margin: 1rem 0;
-  color: #FFF;
+  color: var(--color-default-text);
   font-weight: 800;
 }
 /***************** Page: Home/About *************/
 .photoPresentation {
   margin : 2rem auto 1rem;
   border-radius: 50%;
-  border: 1.5px solid rgb(81, 159, 148);
+  border: 1.5px solid var(--color-sec);
 }
 .presentationWrapper {
   width: 95%;
   margin: 2rem auto;
   padding: .5rem;
-  background-color: rgb(236, 209,171);
+  background-color: var(--color-terc);
   border-radius: 3px;
 }
 .presentationWrapper section {
   margin: 0 0 2rem 0;
   border-radius: 50px 15px 80px 20px;
-  color: rgb(33, 65, 92);
+  color: var(--color-sec-bis);
 }
 .titleSection {
   margin: 2% 0;
-  color: rgb(54, 87, 115);
+  color: var(--color-sec-bis);
 }
 .skillsWrapper {
   display: flex;
@@ -249,7 +261,7 @@ footer {
   flex-wrap: wrap;
 }
 .skillsList li {
-  background-color: rgb(81, 159, 148);
+  background-color: var(--color-sec);
   padding: .5rem;
   margin: .5rem;
   border-radius: 2.5px;
@@ -263,9 +275,9 @@ footer {
   margin-left: 1rem;
 }
 .dlcv {
-  background-color: rgb(81, 159, 148);
-  border: 1px solid rgb(54, 87, 115);
-  color: #FFF;
+  background-color: var(--color-sec);
+  border: 1px solid var(--color-sec-bis);
+  color: var(--color-default-text);
   border-radius: 20% 30%;
   font-size: 1.5rem;
   width: 3.5rem;
@@ -274,8 +286,8 @@ footer {
   margin-bottom: 1rem;
 }
   .dlcv:hover {
-    color: rgb(66, 184, 161);
-    background-color:rgb(35, 83, 96);
+    color: var(--color-sec);
+    background-color:var(--color-sec-bis);
 }
 .dlcv span {
   position: absolute;
@@ -290,7 +302,7 @@ footer {
   margin: auto;
 }
 .wrapper span {
-  color: rgb(65, 182, 166);
+  color: var(--color-sec);
 }
 .wrapper p {
   font-weight: 500;
@@ -351,7 +363,7 @@ figure {
       -webkit-transform: scale(1);
 }
 .img-hover3 figure {
-  background-color: rgb(54, 87, 115);
+  background-color: var(--color-sec-bis);
 }
 .img-hover3 figure img {
   transform: scale(1.5);
@@ -403,7 +415,7 @@ figure {
   margin: 2rem;
 }
 .wrapperContact .titleSection {
-  color: rgb(211, 171, 130);
+  color: var(--color-terc);
 }
 .primaryColumn {
   margin-bottom: 2.5rem;
@@ -418,11 +430,13 @@ figure {
   padding: 0 0 0 2.5rem;
 }
 .contact-info li.phone a {
-  background-image: url("../img/phone-icon.svg");
+  background-image: url("../../img/phone-icon.svg");
  }
 .contact-info li.mail a {
-  background-image: url("../img/mail-icon.svg");
+  background-image: url("../../img/mail-icon.svg");
  }
 .contact-info li.twitter a {
-  background-image: url("../img/twitter-icon.svg");
+  background-image: url("../../img/twitter-icon.svg");
  }
+
+
