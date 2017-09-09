@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var rename = require('gulp-rename');
 var postcss = require('gulp-postcss');
 
 // Plugins
@@ -13,8 +14,9 @@ gulp.task('css', function() {
   	svgFragments
   ];
 
-  return gulp.src('css/src/*.css')
+  return gulp.src('css/src/_imports.css')
     .pipe( postcss(processors) )
+    .pipe(rename('app.css'))
     .pipe(gulp.dest('css/dest'));
 });
 

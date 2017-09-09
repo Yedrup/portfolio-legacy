@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Welcome on my portfolio.",
+  "main": "index.js",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "postcss-svg-fragments": "^2.2.0",
+    "postcss-import": "^10.0.0",
+    "postcss-cssnext": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yedrup/portfolio.git"
+  },
+  "author": "Purdey Chambraud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yedrup/portfolio/issues"
+  },
+  "homepage": "https://github.com/Yedrup/portfolio#readme"
+}
