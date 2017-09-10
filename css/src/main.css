@@ -1,31 +1,7 @@
-/******************* General**********************/
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-    font-style: 15px;
-}
-
-body {
-    min-height: 100vh;
-    font-size: 16px;
-    background-color: var(--color-prim);
-    font-family: arial, serif;
-    color: var(--color-terc);
-}
-
-.container {
-    flex: 1;
-}
 
 
 /************* positions **************/
 
-body,
-header,
 .dlcv,
 .wrapper,
 .wrapper section {
@@ -35,12 +11,6 @@ header,
 
 /****** display / Flex direction *******/
 
-body,
-.gallery,
-header,
-.menu ul,
-.menu li,
-.gallery li img,
 .photoPresentation,
 .dlcv,
 .contact-info a {
@@ -53,24 +23,13 @@ header,
     /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
 }
 
-body,
-.gallery,
-header {
-    flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-}
+
 
 
 /************* Links **************/
 
-a {
-    color: var(--color-sec);
-    font-weight: 800;
-}
 
-header a,
+
 .secondaryColumn a {
     text-decoration: none;
 }
@@ -78,56 +37,26 @@ header a,
 
 /************* Fonts **********/
 
-header,
-footer,
-.dlcv,
-.titleSection {
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-/************* font-size **********/
-
-.titleSection {
-    font-size: 1.3rem;
+.dlcvfont-family: -var(--font-default);{
+    font-family: -var(--font-default);
 }
 
 
 /************* Uppercase **********/
 
-.titleSection,
 .skillsWrapper ul {
     text-transform: uppercase;
 }
 
 
-/************ Capitalize **********/
-
-.myName,
-.jobTitle,
-.menu,
-.copyright {
-    text-transform: capitalize;
-}
 
 
-/******* Text align center *********/
 
-header,
-footer,
-.titleSection,
-.wrapper,
-.wrapper section {
-    text-align: center;
-}
 
 
 /******** List-style none **********/
 
-header,
-.gallery,
-.gallery1,
-.gallery2,
+
 .contact-info li,
 .profilOnLearningPlatform li {
     list-style: none;
@@ -136,14 +65,6 @@ header,
 
 /*********** padding 0 / margin 0 **************/
 
-body,
-.menu ul,
-.copyright,
-.logo,
-.gallery,
-.gallery1,
-.gallery2,
-figure,
 .wrappercontact,
 .contact-info,
 .primaryColumn,
@@ -151,121 +72,24 @@ figure,
     padding: 0;
 }
 
-.gallery1,
-.gallery2 {
-    margin: 0
-}
+
 
 
 /*********** width 100% **************/
 
-header,
-body,
-.wrapper,
-.gallery li img {
-    width: 100%;
-}
 
-
-/********************* Header ******************/
-
-.background-img,
-.background-img:before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.background-img {
-    background: url("../../img/workplace.jpg") no-repeat center;
-    opacity: 0.9;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
-    background-size: cover;
-    z-index: -1;
-}
-
-.background-img:before {
-    content: "";
-    background-color: color(var(--color-prim) a(50%));
-}
-
-.myName,
-.jobTitle {
-    font-size: 1.5rem;
-    color: var(--color-default-text);
-    text-shadow: 1px 1px 2px #0F0F0F;
-}
-
-
-/******************* Nav **********************/
-
-.menu {
-    display: flex;
-    justify-content: center;
-    padding: 2px 0;
-    font-size: 1.1rem;
-}
-
-.menu ul {
-    background-color: color(var(--color-prim) a(70%));
-    border-radius: 10px;
-}
-
-.menu li {
-    margin: .2rem 0;
-}
-
-.menu li a {
-    padding: .2rem 1rem;
-    color: var(--color-default-text);
-    font-weight: 700;
-}
-
-.selected,
-.menu li a:hover {
-    color: var(--color-sec);
-}
-
-.menu li:nth-child(2) {
-    border-right: 2px solid var(--color-sec);
-    border-left: 2px solid var(--color-sec);
-}
 
 
 /***************** Footer **********************/
-
+/* 
 .wrapper,
 .presentationWrapper,
 .wrappercontact {
     overflow: hidden;
-}
-
-footer {
-    background: var(--color-sec-bis);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 2rem;
-}
-.logos {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 4rem;
-  width: 50%;
-}
-.logo {
-  font-size: 2rem;  
-}
+} */
 
 
-.copyright {
-    margin: 1rem 0;
-    color: var(--color-sec);
-    font-weight: 800;
-}
+
 
 
 /***************** Page: Home/About *************/
@@ -290,10 +114,6 @@ footer {
     color: var(--color-sec-bis);
 }
 
-.titleSection {
-    margin: 2% 0;
-    color: var(--color-sec-bis);
-}
 
 .skillsWrapper {
     display: flex;
@@ -301,7 +121,6 @@ footer {
 }
 
 .skillsWrapper ul,
-
 .list-block {
     padding: 0 1rem 0 0;
     line-height: 1.5rem;
@@ -358,127 +177,6 @@ footer {
 }
 
 
-/******************* Page: Portfolio *************/
-
-.wrapper {
-    width: 100%;
-    margin: auto;
-}
-
-.wrapper span {
-    color: var(--color-sec);
-}
-
-.wrapper p {
-    font-weight: 500;
-    line-height: 1.5rem;
-}
-
-.gallery {
-    justify-content: space-around;
-}
-
-.gallery ul {
-    justify-content: space-between;
-}
-
-.gallery1 li,
-.gallery2 li {
-    margin: 1rem;
-}
-
-.gallery1 li:last-of-type {
-    margin-bottom: .5rem;
-}
-
-.gallery2 li:first-of-type {
-    margin-top: .5rem;
-}
-
-figure {
-    overflow: hidden;
-    width: 80%;
-    border-radius: 15px;
-    margin: auto;
-}
-
-.gallery1 figure:last-of-type {
-    margin-bottom: 0rem;
-}
-
-.gallery2 figure:first-of-type {
-    margin-top: 0rem;
-}
-
-.gallery li img {
-    vertical-align: middle;
-}
-
-
-/** Galerie hover effect **/
-
-.img-hover1 figure img {
-    transform: scale(1);
-    transition: .5s linear;
-}
-
-.img-hover1 figure:hover img {
-    transform: scale(1.2);
-}
-
-.img-hover2 figure img {
-    transform: scale(1.3);
-    transition: .5s linear;
-}
-
-.img-hover2 figure:hover img {
-    transform: scale(1);
-}
-
-.img-hover3 figure {
-    background-color: var(--color-sec-bis);
-}
-
-.img-hover3 figure img {
-    transform: scale(1.5);
-    transition: .3s ease-in-out;
-}
-
-.img-hover3 figure:hover img {
-    transform: scale(1);
-    opacity: .3;
-}
-
-.img-hover4 figure img {
-    transform: rotate(13deg) scale(1.3);
-    transition: .5s ease-out;
-}
-
-.img-hover4 figure:hover img {
-    transform: rotate(0deg) scale(1);
-}
-
-.img-hover5 figure img {
-    margin-left: 40px;
-    transform: scale(1.5);
-    transition: .5s linear;
-}
-
-.img-hover5 figure:hover img {
-    margin-left: 0px;
-    transform: scale(1);
-}
-
-.img-hover6 figure img {
-    transform: scale(2.5);
-    transition: .3s ease-in;
-    filter: blur(15px);
-}
-
-.img-hover6 figure:hover img {
-    transform: scale(1);
-    filter: blur(0);
-}
 
 
 /******************* Page: Contact **************/
@@ -487,9 +185,9 @@ figure {
     margin: 2rem;
 }
 
-.wrapperContact .titleSection {
+/* .wrapperContact .titleSection {
     color: var(--color-terc);
-}
+} */
 
 .primaryColumn {
     margin-bottom: 2.5rem;
@@ -499,24 +197,27 @@ figure {
     margin-top: 1rem;
     display: flex
 }
+
 .contact-info li:before {
-  width: 2rem;
-  text-align: center;
-  font-family: 'FontAwesome'; 
-  color: var(--color-terc);
-  font-size: 1rem;
+    width: 2rem;
+    text-align: center;
+    font-family: 'FontAwesome';
+    color: var(--color-terc);
+    font-size: 1rem;
 }
-.phone:before {  
-  content:'\f10b'; 
+
+.phone:before {
+    content: '\f10b';
 }
-.mail:before {  
-  content:'\f003'; 
+
+.mail:before {
+    content: '\f003';
 }
-.twitter:before {  
-  content:'\f099'; 
+
+.twitter:before {
+    content: '\f099';
 }
+
 .contact-info a {
     min-height: 1.667rem;
 }
-
-

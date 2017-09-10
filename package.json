@@ -12,7 +12,12 @@
     "postcss-import": "^10.0.0",
     "postcss-cssnext": "^3.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-minify": "^1.0.0",
+    "run-sequence": "^2.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

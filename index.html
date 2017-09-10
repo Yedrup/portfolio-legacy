@@ -4,34 +4,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Hi! I'm Purdey Chambraud! Welcome on my website. I am currently looking for a one year internship as a front end developer."
+  <meta name="description" content="Hi! I'm Purdey, a french developer Front-End ! Welcome on my website."
   />
   <title>Purdey Chambraud - Home</title>
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="css/dest/app.css">
+  <!-- <link rel="stylesheet" href="css/dest/app.min.css"> -->
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <div class="background-img"></div>
-      <a href="index.html" class="logoheader">
-        <h1 class="myName">purdey chambraud</h1>
-        <h2 class="jobTitle">front-end developer</h2>
+    <header class="c-header">
+      <div class="c-header__background"></div>
+      <a href="index.html">
+        <h1 class="c-header__title">purdey chambraud</h1>
+        <h2 class="c-header__title">front-end developer</h2>
       </a>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html" class="selected">about</a></li>
-          <li><a href="pages/portfolio.html">portfolio</a></li>
-          <li><a href="pages/contact.html">contact</a></li>
+      <nav class="c-navigation">
+        <ul class="c-navigation__items">
+          <li class="c-navigation__item"><a href="index.html" class="c-navigation__link is-selected">about</a></li>
+          <li class="c-navigation__item"><a href="pages/portfolio.html" class="c-navigation__link">portfolio</a></li>
+          <li class="c-navigation__item"><a href="pages/contact.html" class="c-navigation__link">contact</a></li>
         </ul>
       </nav>
     </header>
     <div class="presentationWrapper">
       <img src="img/purdey_photo.jpg" alt="Photo of Purdey Chambraud" class="photoPresentation" />
       <section class="presentation">
-        <h3 class="titleSection">About me</h3>
+        <h3 class="o-section__title">About me</h3>
         <p> Hi, I'm Purdey!</p>
         <p>Welcome on my website :)</p>
         <p>I have been working in tech environment for four beautiful years in two great companies where I fell in love with
@@ -51,7 +52,7 @@
       </section>
       <section class="skillsWrapper">
         <div class="skills">
-          <h3 class="titleSection">My skills</h3>
+          <h3 class="o-section__title">My skills</h3>
           <ul class="skillsList">
             <li>HTML</li>
             <li>CSS</li>
@@ -74,7 +75,7 @@
           </ul>
         </div>
         <div class="profilOnLearningPlatform">
-          <h3 class="titleSection">My profiles on learning websites</h3>
+          <h3 class="o-section__title">My profiles on learning websites</h3>
           <ul>
             <li><a href="http://teamtreehouse.com/purdeychambraud" target="_blank">Treehouse</a></li>
             <li><a href="https://www.codecademy.com/fr/Yedrup" target="_blank">Codecademy</a></li>
@@ -84,7 +85,7 @@
         </div>
       </section>
       <section class="job">
-        <h3 class="titleSection">Job positions</h3>
+        <h3 class="o-section__title">Job positions</h3>
         <ul class="list-block">
           <li><a href="https://beauteprivee.com" target="_blank">Beauté Privée</a> – Front-End Developer (From March 2017)</li>
           <li><a href="https://dailymotion.com" target="_blank">Dailymotion</a> – Office Manager / Executive Assistant (From
@@ -94,7 +95,7 @@
         </ul>
       </section>
       <section class="education">
-        <h3 class="titleSection">Education</h3>
+        <h3 class="o-section__title">Education</h3>
         <ul class="list-block">
           <li>January 2017 : Front-End Developer (internship), <a href="https://www.ecole-multimedia.com/fr/nos-formations/formation-en-alternance/informatique-multimedia/developpeur-front-end-1329.html"
               target="_blank">L'Ecole Multimedia</a></li>
@@ -108,14 +109,14 @@
     </div>
   </div>
   <a href="document/purdey_chambraud_cv_front_end-en.pdf" target="_blank" class="dlcv"><span>CV</span></a>
-  <footer>
-    <div class="logos">
-      <a href="https://github.com/Yedrup" target="_blank" class="logo"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://fr.linkedin.com/in/purdey-chambraud-34098679" target="_blank" class="logo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      <a href="http://twitter.com/yedrup" target="_blank" class="logo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="http://www.viadeo.com/p/0021a1czsakmbhsk" target="_blank" class="logo"><i class="fa fa-viadeo" aria-hidden="true"></i></a>
-    </div>
-    <p class="copyright">&copy; 2017 purdey chambraud.</p>
+  <footer class="c-footer">
+      <div class="c-footer__icons">
+        <a href="https://github.com/Yedrup" target="_blank" class="c-footer__icon"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://fr.linkedin.com/in/purdey-chambraud-34098679" target="_blank" class="c-footer__icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="http://twitter.com/yedrup" target="_blank" class="c-footer__icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="http://www.viadeo.com/p/0021a1czsakmbhsk" target="_blank" class="c-footer__icon"><i class="fa fa-viadeo" aria-hidden="true"></i></a>
+      </div>
+      <p class="c-footer__copyright">&copy; 2017 purdey chambraud.</p>
   </footer>
   <script>
     (function (i, s, o, g, r, a, m) {

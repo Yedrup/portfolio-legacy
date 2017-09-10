@@ -1,0 +1,139 @@
+
+.wrapper a {
+    color: var(--color-sec);
+}
+
+.wrapper p {
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.section-gallery {
+    text-align: center;
+}
+.gallery_parent,
+.c-gallery_image,
+.c-gallery__item {
+    display: flex;
+}
+
+.gallery_parent {
+    flex-direction: column;   
+    justify-content: space-around;
+    
+}
+
+.gallery_parent,
+.c-gallery {
+    list-style: none;
+    padding: 0;
+}
+
+.c-gallery {
+    margin: 0;
+    justify-content: space-between;  
+}
+
+.c-gallery__item {
+    padding: 1rem;   
+}
+
+.c-gallery_figure {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 15px;
+    margin: auto;
+}
+.c-gallery_image {
+    width: 100%;
+    vertical-align: middle;    
+}
+
+/* HOVERS */
+
+.img-hover1 .c-gallery_image {
+    transform: scale(1);
+    transition: .5s linear;
+}
+
+.img-hover1 .c-gallery_figure:hover .c-gallery_image {
+    transform: scale(1.2);
+}
+
+.img-hover2 .c-gallery_image {
+    transform: scale(1.3);
+    transition: .5s linear;
+}
+
+.img-hover2 .c-gallery_figure:hover .c-gallery_image {
+    transform: scale(1);
+}
+
+.img-hover3 .c-gallery_figure {
+    background-color: var(--color-sec-bis);
+}
+
+.img-hover3 .c-gallery_image {
+    transform: scale(1.5);
+    transition: .3s ease-in-out;
+}
+
+.img-hover3 .c-gallery_figure:hover .c-gallery_image {
+    transform: scale(1);
+    opacity: .3;
+}
+
+.img-hover4 .c-gallery_image {
+    transform: rotate(13deg) scale(1.3);
+    transition: .5s ease-out;
+}
+
+.img-hover4 .c-gallery_figure:hover .c-gallery_image {
+    transform: rotate(0deg) scale(1);
+}
+
+.img-hover5 .c-gallery_image {
+    margin-left: 40px;
+    transform: scale(1.5);
+    transition: .5s linear;
+}
+
+.img-hover5 .c-gallery_figure:hover .c-gallery_image {
+    margin-left: 0px;
+    transform: scale(1);
+}
+
+.img-hover6 .c-gallery_image{
+    transform: scale(2.5);
+    transition: .3s ease-in;
+    filter: blur(15px);
+}
+
+.img-hover6 .c-gallery_figure:hover .c-gallery_image {
+    transform: scale(1);
+    filter: blur(0);
+}
+
+@media screen and (min-width: 768px) {
+    .gallery_parent {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .section-gallery {
+        width: 90%;
+        margin: auto;
+    }
+    .c-gallery {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .c-gallery__item {
+        width: 45%;
+    }
+
+
+
+}

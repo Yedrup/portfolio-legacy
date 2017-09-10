@@ -1,54 +1,14 @@
 /************************ Min Width 768px ********************************************/
 
 @media screen and (min-width: 768px) {
-    /******************* General **********************/
-    body,
-    html {
-        font-size: 16px;
-    }
+
     /**** display *****/
-    .gallery,
     .wrapperContact {
         flex-direction: row;
         justify-content: space-around;
     }
-    /**** position *****/
-    .background-img {
-        position: absolute;
-    }
-    /******************* Header **********************/
-    .background-img {
-        background: url("../../img/mac.jpg") no-repeat center;
-        background-size: cover;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-    }
-    .logoheader {
-        float: left;
-        margin-left: 2rem;
-        list-style: none;
-    }
-    .myName,
-    .jobTitle {
-        font-size: 2rem;
-        color: #FFF;
-        font-weight: 800;
-    }
-    /******************* nav **********************/
-    .menu li a {
-        font-size: 1.4rem;
-    }
-    /**************** Footer *************/
-    footer {
-        background-color: var(--color-terc);
-    }
-    .logo,
-    .copyright {
-        color: var(--color-sec-bis);
-    }
+
+
     /************ Page: Home + Contact *************/
     .photoPresentation {
         float: left;
@@ -58,11 +18,6 @@
     .presentationWrapper {
         width: 85%;
         background-color: var(--color-sec-bis);
-    }
-    .titleSection {
-        margin: 0;
-        color: var(--color-terc);
-        text-align: left;
     }
     .presentationWrapper section {
         margin: 0 0 1.8rem 0;
@@ -100,26 +55,7 @@
         width: 5rem;
         height: 5rem;
     }
-    /*********** Page : Portfolio  **********************/
-    .wrapper,
-    .wrapper section {
-        width: 90%;
-        margin: auto;
-    }
-    .gallery1,
-    .gallery2 {
-        width: 100%;
-    }
-    .gallery1 li,
-    .gallery2 li {
-        margin: 2rem 0;
-    }
-    .gallery1 li:last-of-type {
-        margin-bottom: 2rem;
-    }
-    .gallery2 li:first-of-type {
-        margin-top: 2rem;
-    }
+
     /************Page: Contact *************/
     .wrapperContact {
         display: flex;
@@ -137,28 +73,12 @@
 /******************************** Min Width 1024px ************************************/
 
 @media screen and (min-width: 1024px) {
-    /******************* General **********************/
-    body,
-    html {
-        font-size: 20px;
-    }
+   
     .presentationWrapper {
         background-color: var(--color-sec-bis);
     }
-    .titleSection {
-        font-size: 1rem;
-        white-space: nowrap;
-    }
-    .titleSection:not(.profilOnLearningPlatform) {
-        margin-left: .5rem;
-    }
+
     .primaryColumn {
         width: 60%;
-    }
-    .logos {
-      width: 20%;
-    }
-    .logo:hover {
-        font-size: 2.25rem;
     }
 }

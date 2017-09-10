@@ -9,60 +9,60 @@
   <link rel="icon" type="image/png" href="../../img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="../css/dest/app.css">
+  <!-- <link rel="stylesheet" href="../css/dest/app.min.css"> -->
+
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <div class="background-img"></div>
-      <a href="../index.html" class="logoheader">
-        <h1 class="myName">purdey chambraud</h1>
-        <h2 class="jobTitle">front-end developer</h2>
+    <header class="c-header">
+      <div class="c-header__background"></div>
+      <a href="../index.html">
+        <h1 class="c-header__title">purdey chambraud</h1>
+        <h2 class="c-header__title">front-end developer</h2>
       </a>
-      <nav class="menu">
-        <ul>
-          <li><a href="../index.html">about</a></li>
-          <li><a href="portfolio.html" class="selected">portfolio</a></li>
-          <li><a href="contact.html">contact</a></li>
+      <nav class="c-navigation">
+        <ul class="c-navigation__items">
+          <li class="c-navigation__item"><a href="../index.html" class="c-navigation__link">about</a></li>
+          <li class="c-navigation__item"><a href="portfolio.html" class="c-navigation__link is-selected">portfolio</a></li>
+          <li class="c-navigation__item"><a href="contact.html" class="c-navigation__link">contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="wrapper">
-      <section>
-        <p>Welcome to my playground, I've lot of projects in mind, some of them are already on <span><a href="https://github.com/Yedrup" target="_blank">Github</a></span>          :)</p>
-        <p>Until it's completed, here are some nice photos (royalty free) to decorate the home page with some <span>CSS hover effects</span>          I appreciate.</p>
-        <section class="gallery">
-          <ul class="gallery1">
-            <li class="img-hover1">
-              <figure>
-                <img src="../img/chalks.jpg" alt="chalks" />
+      <section class="section-gallery">
+        <p>Welcome to my playground, I've lot of projects in mind, some of them are already on <a href="https://github.com/Yedrup" target="_blank">Github</a> :)</p>
+        <p>Until it's completed, here are some nice photos (royalty free) to decorate the home page with some CSS hover effects I appreciate.</p>
+        <section class="gallery_parent">
+          <ul class="c-gallery">
+            <li class=" c-gallery__item img-hover1">
+              <figure class="c-gallery_figure">
+                <img src="../img/chalks.jpg" alt="chalks" class="c-gallery_image" />
               </figure>
             </li>
-            <li class="img-hover2">
-              <figure>
-                <img src="../img/office.jpeg" alt="laptop on a desk" />
+            <li class=" c-gallery__item img-hover2">
+              <figure class="c-gallery_figure">
+                <img src="../img/office.jpeg" alt="laptop on a desk" class="c-gallery_image" />
               </figure>
             </li>
-            <li class="img-hover3">
-              <figure>
-                <img src="../img/balloon.jpeg" alt="balloons flying in the sky" />
+            <li class=" c-gallery__item img-hover3">
+              <figure class="c-gallery_figure">
+                <img src="../img/balloon.jpeg" alt="balloons flying in the sky" class="c-gallery_image" />
               </figure>
             </li>
-          </ul>
-          <ul class="gallery2">
-            <li class="img-hover4">
-              <figure>
-                <img src="../img/color.jpeg" alt="color swatch" />
+            <li class=" c-gallery__item img-hover4">
+              <figure class="c-gallery_figure">
+                <img src="../img/color.jpeg" alt="color swatch" class="c-gallery_image" />
               </figure>
             </li>
-            <li class="img-hover5">
-              <figure>
-                <img src="../img/workplace2.jpeg" alt="laptop on a desk" />
+            <li class=" c-gallery__item img-hover5">
+              <figure class="c-gallery_figure">
+                <img src="../img/workplace2.jpeg" alt="laptop on a desk" class="c-gallery_image" />
               </figure>
             </li>
-            <li class="img-hover6">
-              <figure>
-                <img src="../img/growup.jpeg" alt="growing plant" />
+            <li class=" c-gallery__item img-hover6">
+              <figure class="c-gallery_figure">
+                <img src="../img/growup.jpeg" alt="growing plant" class="c-gallery_image" />
               </figure>
             </li>
           </ul>
@@ -70,15 +70,15 @@
       </section>
   </div>
   </main>
-  <footer>
-      <div class="logos">
-        <a href="https://github.com/Yedrup" target="_blank" class="logo"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="https://fr.linkedin.com/in/purdey-chambraud-34098679" target="_blank" class="logo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-        <a href="http://twitter.com/yedrup" target="_blank" class="logo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="http://www.viadeo.com/p/0021a1czsakmbhsk" target="_blank" class="logo"><i class="fa fa-viadeo" aria-hidden="true"></i></a>
-      </div>
-      <p class="copyright">&copy; 2017 purdey chambraud.</p>
-    </footer>
+  <footer class="c-footer">
+    <div class="c-footer__icons">
+      <a href="https://github.com/Yedrup" target="_blank" class="c-footer__icon"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://fr.linkedin.com/in/purdey-chambraud-34098679" target="_blank" class="c-footer__icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="http://twitter.com/yedrup" target="_blank" class="c-footer__icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="http://www.viadeo.com/p/0021a1czsakmbhsk" target="_blank" class="c-footer__icon"><i class="fa fa-viadeo" aria-hidden="true"></i></a>
+    </div>
+    <p class="c-footer__copyright">&copy; 2017 purdey chambraud.</p>
+  </footer>
   <script>
     (function (i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;

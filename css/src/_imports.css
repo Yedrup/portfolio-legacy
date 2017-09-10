@@ -1,5 +1,10 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 @import '_variables.css';
+@import 'elements.css';
+@import 'objects.css';
 @import 'main.css';
+@import 'components/component-header.css';
+@import 'components/component-footer.css';
+@import 'components/component-gallery.css';
 @import 'responsive.css';

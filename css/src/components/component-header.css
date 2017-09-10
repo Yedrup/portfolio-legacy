@@ -1,0 +1,108 @@
+.c-header,
+.c-navigation,
+.c-navigation__items,
+.c-navigation__item {
+    display: flex;
+}
+
+.c-header {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    font-family: -var(--font-default);
+}
+
+.c-header a {
+    text-decoration: none;
+}
+
+/* BACKGROUND */
+
+.c-header__background,
+.c-header__background:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.c-header__background {
+    background: url("../../img/workplace.jpg") no-repeat center;
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    background-size: cover;
+    z-index: -1;
+}
+
+.c-header__background:before {
+    content: "";
+    background-color: color(var(--color-prim) a(50%));
+}
+
+.c-header__title {
+    font-size: 1.5rem;
+    color: var(--color-default-text);
+    text-shadow: 1px 1px 2px #0F0F0F;
+}
+.c-header__title {
+    text-transform: capitalize;
+}
+
+
+/* NAVIGATION */
+.c-navigation {
+    justify-content: center;
+}
+.c-navigation__items {
+    background-color: color(var(--color-prim) a(70%));
+    border-radius: 10px;
+    list-style: none;
+    padding: 0 .5rem;
+}
+
+.c-navigation__item {
+    margin: .2rem 0;
+}
+.c-navigation__item:nth-child(2) {
+    border-right: 2px solid var(--color-sec);
+    border-left: 2px solid var(--color-sec);
+}
+.c-navigation__link {
+    padding: .2rem 1rem;
+    color: var(--color-default-text);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.is-selected,
+.c-navigation__link:hover {
+    color: var(--color-sec);
+}
+
+
+
+/************************ Min Width 768px ********************************************/
+
+@media screen and (min-width: 768px) {
+    /******************* Header **********************/
+    .c-header__background {
+        background: url("../../img/mac.jpg") no-repeat center;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .c-header__title {
+        font-size: 2rem;
+        color: #FFF;
+        font-weight: 800;
+    }
+    /******************* nav **********************/
+    .c-navigation__link {
+        font-size: 1.4rem;
+    }
+}

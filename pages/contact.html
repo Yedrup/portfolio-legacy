@@ -10,32 +10,33 @@
   <link rel="icon" type="image/png" href="../img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="../css/dest/app.css">
+  <!-- <link rel="stylesheet" href="../css/dest/app.min.css"> -->
 </head>
 
 <body>
   <div class="container">
-    <header>
-      <div class="background-img"></div>
-      <a href="../index.html" class="logoheader">
-        <h1 class="myName">purdey chambraud</h1>
-        <h2 class="jobTitle">front-end developer</h2>
+    <header class="c-header">
+      <div class="c-header__background"></div>
+      <a href="../index.html">
+        <h1 class="c-header__title">purdey chambraud</h1>
+        <h2 class="c-header__title">front-end developer</h2>
       </a>
-      <nav class="menu">
-        <ul>
-          <li><a href="../index.html">about</a></li>
-          <li><a href="portfolio.html">portfolio</a></li>
-          <li><a href="contact.html" class="selected">contact</a></li>
+      <nav class="c-navigation">
+        <ul class="c-navigation__items">
+          <li class="c-navigation__item"><a href="../index.html" class="c-navigation__link">about</a></li>
+          <li class="c-navigation__item"><a href="portfolio.html" class="c-navigation__link">portfolio</a></li>
+          <li class="c-navigation__item"><a href="contact.html" class="c-navigation__link is-selected">contact</a></li>
         </ul>
       </nav>
     </header>
     <main class="wrapperContact">
       <section class="primaryColumn">
-        <h3 class="titleSection">general information</h3>
+        <h3 class="o-section__title">general information</h3>
         <p>I have started my studies in january 2017 in <a href="https://www.ecole-multimedia.com/fr/nos-formations/formation-en-alternance/informatique-multimedia/developpeur-front-end-1329.html">L'Ecole Multimedia</a>          and my one year intenship in <a href="https://beauteprivee.com" target="_blank">Beauté Privée</a>.</p>
         <p>Feel free to contact me if you want to give me feedbacks about my website!</p>
       </section>
       <section class="secondaryColumn">
-        <h3 class="titleSection">contact details</h3>
+        <h3 class="o-section__title">contact details</h3>
         <ul class="contact-info">
           <li class="phone"><a href="tel:0695328270" title="click here to call me :)">06 95 32 82 70</a></li>
           <li class="mail"><a href="mailto:purdey.chambraud@gmail.com" title="click here to contact me by email" target="_blank">purdey.chambraud@gmail.com</a></li>
@@ -44,14 +45,14 @@
       </section>
   </div>
   </main>
-  <footer>
-    <div class="logos">
-      <a href="https://github.com/Yedrup" target="_blank" class="logo"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://fr.linkedin.com/in/purdey-chambraud-34098679" target="_blank" class="logo"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-      <a href="http://twitter.com/yedrup" target="_blank" class="logo"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="http://www.viadeo.com/p/0021a1czsakmbhsk" target="_blank" class="logo"><i class="fa fa-viadeo" aria-hidden="true"></i></a>
-    </div>
-    <p class="copyright">&copy; 2017 purdey chambraud.</p>
+  <footer class="c-footer">
+      <div class="c-footer__icons">
+        <a href="https://github.com/Yedrup" target="_blank" class="c-footer__icon"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://fr.linkedin.com/in/purdey-chambraud-34098679" target="_blank" class="c-footer__icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href="http://twitter.com/yedrup" target="_blank" class="c-footer__icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="http://www.viadeo.com/p/0021a1czsakmbhsk" target="_blank" class="c-footer__icon"><i class="fa fa-viadeo" aria-hidden="true"></i></a>
+      </div>
+      <p class="c-footer__copyright">&copy; 2017 purdey chambraud.</p>
   </footer>
   <script>
     (function (i, s, o, g, r, a, m) {

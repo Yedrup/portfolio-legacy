@@ -1,0 +1,29 @@
+.o-section__title {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2% 0;
+    font-size: 1.3rem;    
+    color: var(--color-sec-bis);
+    font-family: -var(--font-default);
+  }
+
+  @media screen and (min-width: 768px) {
+    .o-section__title {
+        margin: 0;
+        color: var(--color-terc);
+        text-align: left;
+      }
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .o-section__title {
+         font-size: 1rem;
+         white-space: nowrap;
+     }
+    .o-section__title:not(.profilOnLearningPlatform) {
+         margin-left: .5rem;
+     }
+
+ }
