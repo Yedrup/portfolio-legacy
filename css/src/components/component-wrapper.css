@@ -1,0 +1,35 @@
+.c-wrapper {
+
+    margin-bottom: 1rem;
+}
+
+.c-wrapper--knowledge,
+.c-wrapper--contact,
+.c-wrapper--skills,
+.c-wrapper--profiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.c-wrapper--presentation {
+    background-color: var(--color-terc);
+    color: var(--color-prim);
+}
+
+.c-wrapper--gallery {
+    text-align: center
+}
+@media screen and (min-width: 768px) {
+    .c-wrapper--contact,
+    .c-wrapper--knowledge {
+        flex-direction: row;
+    }
+    .c-wrapper--skills {
+        width: 70%;    
+    }
+    .c-wrapper--presentation {
+        background-color: var(--color-sec-bis);
+        color: var(--color-default-text);
+    }
+}
+

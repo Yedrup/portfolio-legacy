@@ -58,7 +58,6 @@
 .c-navigation__items {
     background-color: color(var(--color-prim) a(70%));
     border-radius: 10px;
-    list-style: none;
     padding: 0 .5rem;
 }
 

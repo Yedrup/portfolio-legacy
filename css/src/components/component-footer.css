@@ -5,13 +5,13 @@
     align-items: center;
     min-height: 2rem;
     text-align: center;
+    color: var(--color-default-text);
     font-family: -var(--font-default);    
 }
 
 .c-footer__copyright {
     text-transform: capitalize;    
     margin: 1rem 0;
-    color: var(--color-sec);
     font-weight: 800;
 }
 
@@ -25,13 +25,11 @@
 }
 
 .c-footer__icon {
+    color: var(--color-default-text);    
     font-size: 2rem;
 }
 
-.c-footer__copyright,
-.c-footer__icon  {
-    padding: 0;
-}
+
 
 @media screen and (min-width: 768px) {
 

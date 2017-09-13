@@ -1,0 +1,16 @@
+.c-general-info {
+    margin-bottom: 2.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .c-general-info {
+        margin-bottom: 0;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .c-general-info {
+        width: 60%;
+    }
+}

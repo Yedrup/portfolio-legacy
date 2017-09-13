@@ -1,0 +1,14 @@
+.c-button--download {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto 2rem;
+    border-radius: 20% 30%;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .c-button--download {
+        width: 5rem;
+        height: 5rem;
+    }
+}

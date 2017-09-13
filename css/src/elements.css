@@ -6,6 +6,8 @@
 html {
     height: 100%;
     font-style: 20px;
+    font-family: -var(--font-default);
+    line-height:1.5;
 }
 
 body {
@@ -15,8 +17,9 @@ body {
     position: relative;    
     min-height: 100vh;
     background-color: var(--color-prim);
-    font-family: -var(--font-default);    
+    font-family: -var(--font-default)!important;    
     color: var(--color-terc);
+    padding: 0;
 }
 .container {
     flex: 1;
@@ -28,7 +31,7 @@ a {
 }
 
 
-body {
+ul {
     padding: 0;
 }
 

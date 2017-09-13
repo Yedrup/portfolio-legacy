@@ -1,4 +1,4 @@
-
+ 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css *//* Document
    ========================================================================== *//**
  * 1. Change the default font family in all browsers (opinionated).
@@ -273,12 +273,17 @@ menu {
  * Add the correct display in IE 10-.
  */[hidden] {
   display: none;
-}/*CSS Variable*/* {
+}/*CSS Variable*/:root {
+  /*colors*/
+  /*font*/
+}* {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }html {
     height: 100%;
     font-style: 20px;
+    font-family: -'Ubuntu', sans-serif;
+    line-height:1.5;
 }body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -291,8 +296,9 @@ menu {
     position: relative;    
     min-height: 100vh;
     background-color: rgb(54, 54, 53);
-    font-family: -'Ubuntu', sans-serif;    
+    font-family: -'Ubuntu', sans-serif!important;    
     color: rgb(236, 209, 171);
+    padding: 0;
 }.container {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -300,7 +306,7 @@ menu {
 }a {
     color: rgb(81, 159, 148);
     font-weight: 800;
-}body {
+}ul {
     padding: 0;
 }@media screen and (min-width: 768px) {
     html {
@@ -310,155 +316,74 @@ menu {
     html {
         font-size: 20px;
     }
-}.o-section__title {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 2% 0;
-    font-size: 1.3rem;    
-    color: rgb(54, 87, 115);
-    font-family: -'Ubuntu', sans-serif;
-  }@media screen and (min-width: 768px) {
-    .o-section__title {
-        margin: 0;
-        color: rgb(236, 209, 171);
-        text-align: left;
-      }
-    
-  }@media screen and (min-width: 1024px) {
-
-    .o-section__title {
-         font-size: 1rem;
-         white-space: nowrap;
-     }
-    .o-section__title:not(.profilOnLearningPlatform) {
-         margin-left: .5rem;
-     }
-
- }/************* positions **************/.dlcv,
-.wrapper,
-.wrapper section {
-    position: relative;
-}/****** display / Flex direction *******/.photoPresentation,
-.dlcv,
-.contact-info a {
-    display: flex;
+}.o-wrapper {
     display: -webkit-box;
-    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;
-    /* TWEENER - IE 10 */
-    display: -webkit-flex;
-    /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-}/************* Links **************/.secondaryColumn a {
-    text-decoration: none;
-}/************* Fonts **********/.dlcvfont-family: -'Ubuntu', sans-serif;{
-    font-family: -'Ubuntu', sans-serif;
-}/************* Uppercase **********/.skillsWrapper ul {
-    text-transform: uppercase;
-}/******** List-style none **********/.contact-info li,
-.profilOnLearningPlatform li {
-    list-style: none;
-}/*********** padding 0 / margin 0 **************/.wrappercontact,
-.contact-info,
-.primaryColumn,
-.secondaryColumn {
-    padding: 0;
-}/*********** width 100% **************//***************** Footer **********************//* 
-.wrapper,
-.presentationWrapper,
-.wrappercontact {
-    overflow: hidden;
-} *//***************** Page: Home/About *************/.photoPresentation {
-    margin: 2rem auto 1rem;
-    border-radius: 50%;
-    border: 1.5px solid rgb(81, 159, 148);
-}.presentationWrapper {
+    display: flex;
     width: 95%;
     margin: 2rem auto;
-    padding: .5rem;
-    background-color: rgb(236, 209, 171);
+    padding: .25rem;
+    background-color: transparent;
+    color: rgb(236, 209, 171);
     border-radius: 3px;
-}.presentationWrapper section {
-    margin: 0 0 2rem 0;
-    border-radius: 50px 15px 80px 20px;
-    color: rgb(54, 87, 115);
-}.skillsWrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+}.o-wrapper--column {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-}.skillsWrapper ul,
-.list-block {
-    padding: 0 1rem 0 0;
-    line-height: 1.5rem;
-}.skillsWrapper li {
-    line-height: 1.4rem;
-}.skills ul {
+}.o-section__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    color: rgb(54, 87, 115);    
+    font-family: -'Ubuntu', sans-serif;
+    margin: 0;
+}.o-items {
+    padding: 0 .5rem;
+    margin: 0;
+}.o-items--no-bullet {
     list-style: none;
+}.o-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-}.skillsList li {
-    background-color: rgb(81, 159, 148);
-    padding: .5rem;
-    margin: .5rem;
-    border-radius: 2.5px;
-}.job li {
-    list-style: none;
-}.education li {
-    list-style-type: circle;
-    padding: 0;
-}.dlcv {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: rgb(81, 159, 148);
     border: 1px solid rgb(54, 87, 115);
     color: #FFF;
-    border-radius: 20% 30%;
     font-size: 1.5rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    margin: auto;
-    margin-bottom: 1rem;
-}.dlcv:hover {
+}.o-button:hover {
     color: rgb(81, 159, 148);
     background-color: rgb(54, 87, 115);
-}.dlcv span {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-}/******************* Page: Contact **************/.wrapperContact {
-    margin: 2rem;
-}/* .wrapperContact .titleSection {
-    color: var(--color-terc);
-} */.primaryColumn {
-    margin-bottom: 2.5rem;
-}.contact-info li {
-    margin-top: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}.contact-info li:before {
-    width: 32px;
-    width: 2rem;
-    text-align: center;
-    font-family: 'FontAwesome';
-    color: rgb(236, 209, 171);
-    font-size: 16px;
-    font-size: 1rem;
-}.phone:before {
-    content: '\f10b';
-}.mail:before {
-    content: '\f003';
-}.twitter:before {
-    content: '\f099';
-}.contact-info a {
-    min-height: 1.667rem;
+}@media screen and (min-width: 768px) {
+    .o-wrapper {
+        width: 90%;
+        background-color: transparent;
+        color: rgb(236, 209, 171);
+        border-radius: 3px;
+    }
+    .o-section__title {
+        color: rgb(236, 209, 171);
+        text-align: left;
+    }
+}@media screen and (min-width: 1024px) {
+    .o-wrapper {
+        width: 85%;
+        padding: 1rem;
+        
+    }
+    .o-section__title {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+
+
+
 }.c-header,
 .c-navigation,
 .c-navigation__items,
@@ -506,7 +431,6 @@ menu {
 }.c-navigation__items {
     background-color: rgba(54, 54, 53, 0.7);
     border-radius: 10px;
-    list-style: none;
     padding: 0 .5rem;
 }.c-navigation__item {
     margin: .2rem 0;
@@ -555,11 +479,11 @@ menu {
             align-items: center;
     min-height: 2rem;
     text-align: center;
+    color: #FFF;
     font-family: -'Ubuntu', sans-serif;    
 }.c-footer__copyright {
     text-transform: capitalize;    
     margin: 1rem 0;
-    color: rgb(81, 159, 148);
     font-weight: 800;
 }.c-footer__icons {
     display: -webkit-box;
@@ -574,10 +498,8 @@ menu {
     height: 4rem;
     width: 50%;
 }.c-footer__icon {
+    color: #FFF;    
     font-size: 2rem;
-}.c-footer__copyright,
-.c-footer__icon  {
-    padding: 0;
 }@media screen and (min-width: 768px) {
 
     .c-footer {
@@ -595,13 +517,40 @@ menu {
      .c-footer__icon:hover {
          font-size: 2.25rem;
      }
- }.wrapper a {
-    color: rgb(81, 159, 148);
-}.wrapper p {
-    font-weight: 500;
-    line-height: 1.5rem;
-}.section-gallery {
-    text-align: center;
+ }.c-wrapper {
+
+    margin-bottom: 1rem;
+}.c-wrapper--knowledge,
+.c-wrapper--contact,
+.c-wrapper--skills,
+.c-wrapper--profiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}.c-wrapper--presentation {
+    background-color: rgb(236, 209, 171);
+    color: rgb(54, 54, 53);
+}.c-wrapper--gallery {
+    text-align: center
+}@media screen and (min-width: 768px) {
+    .c-wrapper--contact,
+    .c-wrapper--knowledge {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .c-wrapper--skills {
+        width: 70%;    
+    }
+    .c-wrapper--presentation {
+        background-color: rgb(54, 87, 115);
+        color: #FFF;
+    }
 }.gallery_parent,
 .c-gallery_image,
 .c-gallery__item {
@@ -619,9 +568,7 @@ menu {
 }.gallery_parent,
 .c-gallery {
     list-style: none;
-    padding: 0;
 }.c-gallery {
-    margin: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;  
@@ -722,10 +669,6 @@ menu {
             justify-content: space-around;
     }
 
-    .section-gallery {
-        width: 90%;
-        margin: auto;
-    }
     .c-gallery {
         width: 80%;
         display: -webkit-box;
@@ -742,88 +685,132 @@ menu {
 
 
 
-}/************************ Min Width 768px ********************************************/@media screen and (min-width: 768px) {
-
-    /**** display *****/
-    .wrapperContact {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
+}.c-section__title--contact {
+    color: rgb(236, 209, 171);
+}.c-title--education:after,
+.c-title--job:after {
+    font-family: FontAwesome;
+    margin-left: 8px;
+    margin-left: .5rem;
+    color: rgb(81, 159, 148);
+}.c-title--education:after {
+    content: "\f19d";
+}.c-title--job:after {
+    content: "\f0b1";
+}@media screen and (min-width: 768px) {
+    .c-diploma__date {
+        color: rgb(236, 209, 171);
+    }
+    .c-title--education:after,
+    .c-title--job:after {
+        color: #FFF;
     }
 
-
-    /************ Page: Home + Contact *************/
-    .photoPresentation {
+}.c-presentation {
+    padding: 0 .5rem;
+}.c-presentation__photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 2rem auto;
+    border-radius: 50%;
+    border: 1px solid rgb(81, 159, 148);
+}@media screen and (min-width: 768px) {
+    .c-presentation__photo {
+        position: static;
+        position: initial;        
         float: left;
         -webkit-shape-outside: circle(40%);
                 shape-outside: circle(40%);
-        margin: 5rem 2rem 4rem 2rem;
+        margin: 8rem 2rem 8rem 2rem;
     }
-    .presentationWrapper {
-        width: 85%;
-        background-color: rgb(54, 87, 115);
-    }
-    .presentationWrapper section {
-        margin: 0 0 1.8rem 0;
-        border-radius: 50%;
-        background-color: rgb(54, 87, 115);
-        color: #FFF;
-    }
-    .skillsWrapper {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-    }
-    .skills {
-        width: 70%;
-    }
-    .list-block {
-        padding-left: 1.5rem;
-    }
-    .profil,
-    .titleSection,
-    .titleSection {
-        color: rgb(236, 209, 171);
-        text-align: left;
-        font-size: 1.4rem;
-    }
-    .profilonwebsite ul {
-        font-size: 1.2rem;
-    }
-    .presentationWrapper li {
-        margin-top: .5rem;
-    }
-    .job li,
-    .education li {
-        list-style-type: circle;
-    }
-    .dlcv {
+}.c-button--download {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0 auto 2rem;
+    border-radius: 20% 30%;
+    text-decoration: none;
+}@media screen and (min-width: 768px) {
+    .c-button--download {
         width: 5rem;
         height: 5rem;
     }
+}.c-skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 1rem 0 0;
+    line-height: 1.5rem;
+}.c-skill {
+    background-color: rgb(81, 159, 148);
+    padding: .5rem;
+    margin: .5rem;
+    border-radius: 2.5px;
+    text-transform: uppercase;
+    
+}.c-job__link {
+    color: rgb(54, 87, 115);
+    font-size: 1.15rem;
+}@media screen and (min-width: 768px) {
 
-    /************Page: Contact *************/
-    .wrapperContact {
-        display: flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
+    .c-job__link {
+        color: rgb(81, 159, 148);
+        font-size: 1.1rem;
     }
-    .primaryColumn {
-        margin-right: 3rem;
+}.c-diploma__date {
+    color: rgb(54, 87, 115);
+    font-weight: bold;
+}@media screen and (min-width: 768px) {
+    .c-diploma__date {
+        color: rgb(236, 209, 171);
+    }
+}.c-contacts {
+    list-style: none;    
+    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}.c-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 2rem;
+    margin-bottom: .25rem;
+}.c-contact:before {
+    width: 32px;
+    width: 2rem;
+    text-align: center;
+    font-family: 'FontAwesome';
+    color: rgb(236, 209, 171);
+    font-size: 16px;
+    font-size: 1rem;
+}.c-contacts__link {
+    text-decoration: none;    
+    
+}.c-icon--phone:before {
+    content: '\f10b';
+}.c-icon--mail:before {
+    content: '\f003';
+}.c-icon--twitter:before {
+    content: '\f099';
+}.c-general-info {
+    margin-bottom: 2.5rem;
+}@media screen and (min-width: 768px) {
+    .c-general-info {
         margin-bottom: 0;
         width: 50%;
     }
-}/******************************** Min Width 1024px ************************************/@media screen and (min-width: 1024px) {
-   
-    .presentationWrapper {
-        background-color: rgb(54, 87, 115);
-    }
-
-    .primaryColumn {
+}@media screen and (min-width: 1024px) {
+    .c-general-info {
         width: 60%;
     }
 }

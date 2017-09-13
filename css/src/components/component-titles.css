@@ -1,0 +1,31 @@
+
+.c-section__title--contact {
+    color: var(--color-terc);
+}
+
+.c-title--education:after,
+.c-title--job:after {
+    font-family: FontAwesome;
+    margin-left: .5rem;
+    color: var(--color-sec);
+}
+
+.c-title--education:after {
+    content: "\f19d";
+}
+
+.c-title--job:after {
+    content: "\f0b1";
+}
+
+
+@media screen and (min-width: 768px) {
+    .c-diploma__date {
+        color: var(--color-terc);
+    }
+    .c-title--education:after,
+    .c-title--job:after {
+        color: var(--color-default-text);
+    }
+
+}

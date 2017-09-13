@@ -1,0 +1,39 @@
+
+.c-contacts {
+    list-style: none;    
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-contact {
+    display: flex;
+    min-height: 2rem;
+    margin-bottom: .25rem;
+}
+.c-contact:before {
+    width: 2rem;
+    text-align: center;
+    font-family: 'FontAwesome';
+    color: var(--color-terc);
+    font-size: 1rem;
+}
+
+
+
+.c-contacts__link {
+    text-decoration: none;    
+    
+}
+
+.c-icon--phone:before {
+    content: '\f10b';
+}
+
+.c-icon--mail:before {
+    content: '\f003';
+}
+
+.c-icon--twitter:before {
+    content: '\f099';
+}
