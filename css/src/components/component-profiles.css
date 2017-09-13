@@ -1,0 +1,22 @@
+.c-profiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-profile__link {
+    color: var(--color-sec);
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .c-profiles {
+        align-items: flex-start;
+    }
+    .c-profile__link {
+        color: var(--color-sec);
+    }
+    .c-profile__link:hover {
+        color: var(--color-terc);
+    }
+}

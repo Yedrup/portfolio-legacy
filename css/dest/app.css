@@ -477,13 +477,13 @@ menu {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 2rem;
+    min-height: 6rem;
     text-align: center;
     color: #FFF;
     font-family: -'Ubuntu', sans-serif;    
 }.c-footer__copyright {
     text-transform: capitalize;    
-    margin: 1rem 0;
+    margin: .5rem 0;
     font-weight: 800;
 }.c-footer__icons {
     display: -webkit-box;
@@ -518,7 +518,6 @@ menu {
          font-size: 2.25rem;
      }
  }.c-wrapper {
-
     margin-bottom: 1rem;
 }.c-wrapper--knowledge,
 .c-wrapper--contact,
@@ -533,7 +532,7 @@ menu {
             flex-direction: column;
 }.c-wrapper--presentation {
     background-color: rgb(236, 209, 171);
-    color: rgb(54, 54, 53);
+    color: rgb(54, 87, 115);
 }.c-wrapper--gallery {
     text-align: center
 }@media screen and (min-width: 768px) {
@@ -687,6 +686,7 @@ menu {
 
 }.c-section__title--contact {
     color: rgb(236, 209, 171);
+    text-align: left;
 }.c-title--education:after,
 .c-title--job:after {
     font-family: FontAwesome;
@@ -706,6 +706,7 @@ menu {
         color: #FFF;
     }
 
+
 }.c-presentation {
     padding: 0 .5rem;
 }.c-presentation__photo {
@@ -719,13 +720,15 @@ menu {
     border-radius: 50%;
     border: 1px solid rgb(81, 159, 148);
 }@media screen and (min-width: 768px) {
-    .c-presentation__photo {
-        position: static;
-        position: initial;        
+    .c-presentation__photo {  
+        position: relative;
+        left: 2rem;
+        top: 1rem;      
+        padding-left: 0;
         float: left;
         -webkit-shape-outside: circle(40%);
                 shape-outside: circle(40%);
-        margin: 8rem 2rem 8rem 2rem;
+        margin: 5rem 6.65rem 5rem 0;
     }
 }.c-button--download {
     width: 3.5rem;
@@ -744,7 +747,7 @@ menu {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0 1rem 0 0;
+    padding: 0;
     line-height: 1.5rem;
 }.c-skill {
     background-color: rgb(81, 159, 148);
@@ -752,7 +755,36 @@ menu {
     margin: .5rem;
     border-radius: 2.5px;
     text-transform: uppercase;
-    
+}@media screen and (min-width: 768px) {
+    .c-skills {
+        padding: 0 1rem 0 0;        
+    }
+}.c-profiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}.c-profile__link {
+    color: rgb(81, 159, 148);
+    text-decoration: none;
+}@media screen and (min-width: 768px) {
+    .c-profiles {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+    .c-profile__link {
+        color: rgb(81, 159, 148);
+    }
+    .c-profile__link:hover {
+        color: rgb(236, 209, 171);
+    }
 }.c-job__link {
     color: rgb(54, 87, 115);
     font-size: 1.15rem;

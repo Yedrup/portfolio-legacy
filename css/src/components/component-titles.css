@@ -1,6 +1,7 @@
 
 .c-section__title--contact {
     color: var(--color-terc);
+    text-align: left;
 }
 
 .c-title--education:after,
@@ -27,5 +28,6 @@
     .c-title--job:after {
         color: var(--color-default-text);
     }
+
 
 }

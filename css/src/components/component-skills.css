@@ -2,7 +2,7 @@
 .c-skills {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 1rem 0 0;
+    padding: 0;
     line-height: 1.5rem;
 }
 .c-skill {
@@ -11,5 +11,13 @@
     margin: .5rem;
     border-radius: 2.5px;
     text-transform: uppercase;
-    
 }
+
+
+
+@media screen and (min-width: 768px) {
+    .c-skills {
+        padding: 0 1rem 0 0;        
+    }
+}
+

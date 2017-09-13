@@ -2,15 +2,4 @@
 @import '_variables.css';
 @import 'elements.css';
 @import 'objects.css';
-@import 'components/component-header.css';
-@import 'components/component-footer.css';
-@import 'components/component-wrapper.css';
-@import 'components/component-gallery.css';
-@import 'components/component-titles.css';
-@import 'components/component-presentation.css';
-@import 'components/component-buttons.css';
-@import 'components/component-skills.css';
-@import 'components/component-job.css';
-@import 'components/component-diplomas.css';
-@import 'components/component-contacts.css';
-@import 'components/component-general-info.css';
+@import 'components/__components.css';

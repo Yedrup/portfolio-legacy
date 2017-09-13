@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 2rem;
+    min-height: 6rem;
     text-align: center;
     color: var(--color-default-text);
     font-family: -var(--font-default);    
@@ -11,7 +11,7 @@
 
 .c-footer__copyright {
     text-transform: capitalize;    
-    margin: 1rem 0;
+    margin: .5rem 0;
     font-weight: 800;
 }
 

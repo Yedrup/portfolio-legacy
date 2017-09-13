@@ -1,5 +1,4 @@
 .c-wrapper {
-
     margin-bottom: 1rem;
 }
 
@@ -13,7 +12,7 @@
 
 .c-wrapper--presentation {
     background-color: var(--color-terc);
-    color: var(--color-prim);
+    color: var(--color-sec-bis);
 }
 
 .c-wrapper--gallery {
