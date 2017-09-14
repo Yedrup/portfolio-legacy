@@ -1,11 +1,6 @@
-.c-header,
-.c-navigation,
-.c-navigation__items,
-.c-navigation__item {
-    display: flex;
-}
 
 .c-header {
+    display: flex;
     flex-direction: column;
     width: 100%;
     position: relative;
@@ -16,8 +11,6 @@
 .c-header a {
     text-decoration: none;
 }
-
-/* BACKGROUND */
 
 .c-header__background,
 .c-header__background:before {
@@ -50,42 +43,7 @@
     text-transform: capitalize;
 }
 
-
-/* NAVIGATION */
-.c-navigation {
-    justify-content: center;
-}
-.c-navigation__items {
-    background-color: color(var(--color-prim) a(70%));
-    border-radius: 10px;
-    padding: 0 .5rem;
-}
-
-.c-navigation__item {
-    margin: .2rem 0;
-}
-.c-navigation__item:nth-child(2) {
-    border-right: 2px solid var(--color-sec);
-    border-left: 2px solid var(--color-sec);
-}
-.c-navigation__link {
-    padding: .2rem 1rem;
-    color: var(--color-default-text);
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-.is-selected,
-.c-navigation__link:hover {
-    color: var(--color-sec);
-}
-
-
-
-/************************ Min Width 768px ********************************************/
-
 @media screen and (min-width: 768px) {
-    /******************* Header **********************/
     .c-header__background {
         background: url("../../img/mac.jpg") no-repeat center;
         background-size: cover;
@@ -99,9 +57,5 @@
         font-size: 2rem;
         color: #FFF;
         font-weight: 800;
-    }
-    /******************* nav **********************/
-    .c-navigation__link {
-        font-size: 1.4rem;
     }
 }

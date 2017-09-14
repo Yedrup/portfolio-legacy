@@ -1,6 +1,11 @@
 .c-presentation {
     padding: 0 .5rem;
 }
+
+.c-presentation p:first-of-type {
+    margin-top: 0;
+}
+
 .c-presentation__photo {
     display: flex;
     justify-content: center;

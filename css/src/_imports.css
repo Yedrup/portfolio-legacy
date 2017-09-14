@@ -1,5 +1,5 @@
 @import 'generic/normalize.css';
 @import '_variables.css';
 @import 'elements.css';
-@import 'objects.css';
+@import 'objects/__objects.css';
 @import 'components/__components.css';

@@ -1,0 +1,16 @@
+
+.o-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-sec);
+    border: 1px solid var(--color-sec-bis);
+    color: var(--color-default-text);
+    font-size: 1.5rem;
+}
+
+.o-button:hover {
+    color: var(--color-sec);
+    background-color: var(--color-sec-bis);
+}
+

@@ -1,0 +1,22 @@
+.o-section__title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--color-sec-bis);
+    font-family: -var(--font-default);
+    margin: 0 0 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .o-section__title {
+        color: var(--color-terc);
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .o-section__title {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
+}

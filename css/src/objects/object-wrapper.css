@@ -1,0 +1,33 @@
+.o-wrapper {
+    display: flex;
+    width: 95%;
+    margin: 2rem auto;
+    padding: .25rem;
+    background-color: transparent;
+    color: var(--color-terc);
+    border-radius: 3px;
+}
+
+.o-wrapper--column {
+    flex-direction: column;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .o-wrapper {
+        width: 90%;
+        background-color: transparent;
+        color: var(--color-terc);
+        border-radius: 3px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .o-wrapper {
+        width: 85%;
+        padding: 1rem;
+        
+    }
+}

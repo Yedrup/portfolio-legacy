@@ -1,0 +1,8 @@
+.o-legend {
+        text-transform: none;
+        color: var(--color-sec);    
+        background-color: var(--color-default-text);
+        padding: .25rem;
+        font-size: .75rem;
+        border-radius: 3px;    
+}

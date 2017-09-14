@@ -13,6 +13,10 @@
     text-transform: uppercase;
 }
 
+.c-skill--used-here {
+    color: var(--color-sec);    
+    background-color: var(--color-default-text);    
+}
 
 
 @media screen and (min-width: 768px) {
