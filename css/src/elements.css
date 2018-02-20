@@ -21,6 +21,33 @@ body {
     color: var(--color-terc);
     padding: 0;
 }
+
+
+
+@media screen and (min-width: 768px) {
+    body:after{
+      content: "WORK IN PROGRESS";
+      position: fixed;
+      width: 14.75rem;
+      padding: .5rem;
+      background: #41B6A6;
+      top: 57px;
+      left: -80px;
+      text-align: center;
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      color: #fff;
+      line-height: 27px;
+      -ms-transform: rotate(-48deg);
+      -webkit-transform: rotate(-48deg);
+      transform: rotate(-48deg);
+      }
+    }
+
+
+
 .container {
     flex: 1;
 }

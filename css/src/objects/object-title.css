@@ -7,14 +7,31 @@
     margin: 0 0 1rem 0;
 }
 
+.o-subsection__title {
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    color: var(--color-sec-bis);
+    font-family: -var(--font-default);
+    margin: 0 0 .5rem 0;
+}
+
+
 @media screen and (min-width: 768px) {
     .o-section__title {
+        color: var(--color-terc);
+        text-align: left;
+    }
+    .o-subsection__title {
         color: var(--color-terc);
         text-align: left;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    .o-section__title {
+        font-size: 1rem;
+        white-space: nowrap;
+    }
     .o-section__title {
         font-size: 1rem;
         white-space: nowrap;
