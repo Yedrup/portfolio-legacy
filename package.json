@@ -9,13 +9,15 @@
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "postcss-svg-fragments": "^2.2.0",
-    "postcss-import": "^10.0.0",
     "postcss-cssnext": "^3.0.2"
   },
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
     "del": "^3.0.0",
     "gulp-clean-css": "^3.8.0",
     "gulp-minify": "^1.0.0",
+    "postcss-import": "^10.0.0",
     "run-sequence": "^2.1.0"
   },
   "scripts": {

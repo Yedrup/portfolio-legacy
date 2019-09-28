@@ -4,6 +4,7 @@
     flex-direction: column;
     width: 100%;
     position: relative;
+    align-items: center;
     text-align: center;
     font-family: -var(--font-default);
 }
@@ -22,7 +23,7 @@
 }
 
 .c-header__background {
-    background: url("../../img/workplace.jpg") no-repeat center;
+    background: url("../img/workplace.jpg") no-repeat center;
     opacity: 0.9;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
     background-size: cover;
@@ -43,9 +44,38 @@
     text-transform: capitalize;
 }
 
+.c-header__link--new-portfolio {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    z-index: 9999;
+    border-radius: 20px;
+    color: #FFF;
+    background: #ab4267;
+}
+.c-header__link--new-portfolio:after {
+    content:"";
+    height:2.5rem;
+    width: 2.5rem;
+    margin-left: .5rem;
+    display:inline-block;
+    background:url("../img/newFolioImg.png") no-repeat;
+    background-size:100%;
+    position: relative;
+}
+
+.c-header__link--new-portfolio:before {
+    font-family: "fontAwesome";
+    content: '\f08e';
+    font-size: 1.5rem;
+    display:inline-block;
+    margin-right: .5rem;
+}
+
+
 @media screen and (min-width: 768px) {
     .c-header__background {
-        background: url("../../img/mac.jpg") no-repeat center;
+        background: url("../img/mac.jpg") no-repeat center;
         background-size: cover;
         top: 0;
         left: 0;

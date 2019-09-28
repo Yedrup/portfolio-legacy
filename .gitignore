@@ -3,3 +3,6 @@ node_modules/
 */.DS_Store
 **/.DS_Store
 .htaccess
+css/dest/**
+www
+playground/
