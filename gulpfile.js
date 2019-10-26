@@ -36,7 +36,7 @@ gulp.task('css_prod', ['cleanWWW'] , function () {
   ];
   return gulp.src('css/src/_imports.css')
     .pipe(postcss(processors))
-    .pipe(rename('app.css'))
+    .pipe(rename('app.min.css'))
     .pipe(gulp.dest('www/css/'))
     .pipe(gulp.src(['css/font-awesome/**','.htaccess','index.html','document/*', 'pages/**', 'img/**'], {
       base: '.'
